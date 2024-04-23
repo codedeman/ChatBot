@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "7CB66ADA-EBAB-4EB3-B21E-68520A9E8580"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "601FFE90-EEA4-4AFB-94E5-9E11361C5D24"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Message/Sources/Message/MessageRowView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
+            landmarkName = "attributedView(results:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3671EDAF-0594-4583-ABA8-1F75C59675C1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ScanApp/Cores/NetWork/Sources/NetWork/NetWork.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "request(_:for:jsonDecoder:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B13032C9-1D55-4367-8999-E9E514260303"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ScanApp/Cores/NetWork/Sources/NetWork/NetWork.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "request(_:for:jsonDecoder:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6522B243-CDEC-4C3D-90D3-DE41B7B2402E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ScanApp/Cores/NetWork/Sources/NetWork/NetWork.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "request(_:for:jsonDecoder:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CC48954E-AB17-4DEA-BB47-38AC9BB1D5EF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ScanApp/Cores/NetWork/Sources/NetWork/NetWork.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "request(_:for:jsonDecoder:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B0FBCC1A-CC82-41BB-8D09-4A397BC72A62"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Message/Sources/Message/MessageRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "138"
+            endingLineNumber = "138"
+            landmarkName = "DBMessageRepository"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BCC48C26-3999-4598-A2CD-FD0F32CB663E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Message/Sources/Message/MessageRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "139"
+            endingLineNumber = "139"
+            landmarkName = "DBMessageRepository"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1CA20872-1AD6-4236-9C9C-0A3BEEFFA635"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ScanApp/Cores/NetWork/Sources/NetWork/NetWork.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "request(_:for:jsonDecoder:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1CA20872-1AD6-4236-9C9C-0A3BEEFFA635 - 15433bdc9c40ad3e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #2 (Swift.AsyncThrowingStream&lt;Swift.Optional&lt;&#x3c4;_0_0&gt;, Swift.Error&gt;.Continuation) -&gt; () in NetWork.NetWorkLayer.request&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(_: Foundation.URLRequest, for: &#x3c4;_0_0.Type, jsonDecoder: Foundation.JSONDecoder) async throws -&gt; Swift.AsyncThrowingStream&lt;Swift.Optional&lt;&#x3c4;_0_0&gt;, Swift.Error&gt;"
+                  moduleName = "ScanApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kevin/ScanApp/ScanApp/Cores/NetWork/Sources/NetWork/NetWork.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86">
+               </Location>
+               <Location
+                  uuid = "1CA20872-1AD6-4236-9C9C-0A3BEEFFA635 - 15433bdc9c40ad3e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #2 (Swift.AsyncThrowingStream&lt;Swift.Optional&lt;&#x3c4;_0_0&gt;, Swift.Error&gt;.Continuation) -&gt; () in NetWork.NetWorkLayer.request&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(_: Foundation.URLRequest, for: &#x3c4;_0_0.Type, jsonDecoder: Foundation.JSONDecoder) async throws -&gt; Swift.AsyncThrowingStream&lt;Swift.Optional&lt;&#x3c4;_0_0&gt;, Swift.Error&gt;"
+                  moduleName = "ScanApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kevin/ScanApp/ScanApp/Cores/NetWork/Sources/NetWork/NetWork.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C57EEDE6-70F8-4461-8863-10C83BB3B720"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Message/Sources/Message/MessageRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
+            landmarkName = "send(text:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D1405AFF-E360-4902-8369-B6DFD0AA434E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Message/Sources/Message/MessageCenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "174"
+            endingLineNumber = "174"
+            landmarkName = "extractTextIfNeeded(from:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AA818537-81BC-4BA0-97EB-9062C847FB49"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Message/Sources/Message/MessageCenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "173"
+            endingLineNumber = "173"
+            landmarkName = "extractTextIfNeeded(from:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "AA818537-81BC-4BA0-97EB-9062C847FB49 - 94fd3e4d576bc7e3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable () -&gt; () in Message.MessageCenter.extractTextIfNeeded(from: Swift.Optional&lt;Foundation.URL&gt;) -&gt; ()"
+                  moduleName = "ScanApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kevin/Message/Sources/Message/MessageCenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "173"
+                  endingLineNumber = "173">
+               </Location>
+               <Location
+                  uuid = "AA818537-81BC-4BA0-97EB-9062C847FB49 - 245f31943a3e3c1a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 @Sendable () -&gt; () in Message.MessageCenter.extractTextIfNeeded(from: Swift.Optional&lt;Foundation.URL&gt;) -&gt; ()"
+                  moduleName = "ScanApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kevin/Message/Sources/Message/MessageCenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "173"
+                  endingLineNumber = "173">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F73F672A-B683-4B26-9AA8-733B37166150"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Message/Sources/Message/MessageCenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "175"
+            endingLineNumber = "175"
+            landmarkName = "extractTextIfNeeded(from:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "10F7BCF8-D0E1-473F-A078-4BBCC496A0CD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Message/Sources/Message/MessageCenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "170"
+            endingLineNumber = "170"
+            landmarkName = "extractTextIfNeeded(from:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "10F7BCF8-D0E1-473F-A078-4BBCC496A0CD - fc6a5e7786679be9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Message.MessageCenter.extractTextIfNeeded(from: Swift.Optional&lt;Foundation.URL&gt;) -&gt; ()"
+                  moduleName = "ScanApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kevin/Message/Sources/Message/MessageCenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "171"
+                  endingLineNumber = "171">
+               </Location>
+               <Location
+                  uuid = "10F7BCF8-D0E1-473F-A078-4BBCC496A0CD - 94fd3e4d576bc725"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable () -&gt; () in Message.MessageCenter.extractTextIfNeeded(from: Swift.Optional&lt;Foundation.URL&gt;) -&gt; ()"
+                  moduleName = "ScanApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kevin/Message/Sources/Message/MessageCenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "171"
+                  endingLineNumber = "171">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
