@@ -14,6 +14,8 @@ let package = Package(
     ],
     dependencies: [
         .package(path: "../../Foundation/Logger"),
+        .package(path: "../../TestSupport/TestSupport"),
+
     ],
 
     targets: [
@@ -22,11 +24,17 @@ let package = Package(
         .target(
             name: "NetWork",
             dependencies: [
+                "TestSupport",
                 .product(name: "Logger", package: "Logger"),
-            ]
+            ],
+            resources: [.process("Resources")]
         ),
         .testTarget(
             name: "NetWorkTests",
-            dependencies: ["NetWork"]),
+            dependencies: ["NetWork"],
+            resources: [.process("Resources")]
+        ),
+
+
     ]
 )

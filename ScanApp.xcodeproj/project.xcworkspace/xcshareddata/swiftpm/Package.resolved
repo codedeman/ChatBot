@@ -1,5 +1,5 @@
 {
-  "originHash" : "9202b0a59f7494854b716632cca642bbf9974496f1c8b264a7c0541c2162f522",
+  "originHash" : "1dfdf821fdc13ce5c48199e53d7ca7ee4cf32c675c309837ba6f3196885bbb7e",
   "pins" : [
     {
       "identity" : "highlightr",
@@ -8,6 +8,24 @@
       "state" : {
         "revision" : "93199b9e434f04bda956a613af8f571933f9f037",
         "version" : "2.1.2"
+      }
+    },
+    {
+      "identity" : "ohhttpstubs",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AliSoftware/OHHTTPStubs",
+      "state" : {
+        "revision" : "12f19662426d0434d6c330c6974d53e2eb10ecd9",
+        "version" : "9.1.0"
+      }
+    },
+    {
+      "identity" : "pulse",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kean/Pulse",
+      "state" : {
+        "revision" : "ba7a0e4668de7074470bd37a60b1f89325a416bb",
+        "version" : "0.20.2"
       }
     },
     {

@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "A4B80723-0712-4BD0-9198-1AA40D9084CB",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:..\/ScanApp\/ScanApp.xcodeproj",
+      "identifier" : "0A629B9A2BCE5D53007DDE57",
+      "name" : "ScanApp"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:",
+        "identifier" : "MessageTests",
+        "name" : "MessageTests"
+      }
+    }
+  ],
+  "version" : 1
+}

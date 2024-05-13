@@ -6,26 +6,36 @@
 //
 
 import SwiftUI
+import DebugMenu
+import Pulse
+import PulseUI
+import Message
+import Logger
+import NetWork
+import Logger
+import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        chatView
-//        VStack {
-//
-//            Image(systemName: "globe")
-//                .imageScale(.large)
-//                .foregroundStyle(.tint)
-//            Text("Hello, world!")
-//        }
-//        .padding()
-    }
+    @State private var showConsoleView = false
+    @State private var showDestinationView = true
 
-    var chatView: some View {
-        ScrollViewReader(content: { proxy in
-            Text("Hello Mother fucker ")
-        })
-    }
+    let mindarg: CGFloat = 100
+    let screenWidth = UIScreen.main.bounds.width
+    let logger = Logger(label: "🤣")
+
+    var body: some View {
+        MessageCenter(
+            vm: MessageViewModel(
+                messageRepository: DBMessageRepository(
+                    apiClientService: NetWorkLayer(
+                        logger: logger
+                    )
+                )
+            )
+        )
+        }
 }
+
 
 #Preview {
     ContentView()

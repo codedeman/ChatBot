@@ -19,15 +19,39 @@ public protocol NetWorkAPI: AnyObject {
     ) async throws -> AsyncThrowingStream<T?, Error>
 
 
-    func request<T: Decodable>(_ endpoint: URLRequest, for type: T.Type, decoder: JSONDecoder) async -> Result<T, Error>
-
+    func request<T: Decodable>(
+        _ endpoint: URLRequest,
+        for type: T.Type,
+        decoder: JSONDecoder
+    ) async -> Result<T, Error>
 
 }
 
+extension NetWorkAPI {
+
+    public func request(
+        _ endpoint: URLRequest
+    ) async -> Result<Data, Error>  {
+
+        do {
+            let (data, response) = try await URLSession.shared.data(for: endpoint)
+
+            guard let httpResponse = response as? HTTPURLResponse else {
+                return .failure(NetworkError.invalidResponse)
+            }
+
+            if httpResponse.statusCode == 200 {
+                return .success(data)
+            } else {
+                return .failure(NetworkError.badResponse(statusCode: 400, errorText: "Bad response"))
+            }
+        } catch let eror  {
+            return .failure((eror))
+        }
+    }
+}
 
 final public class NetWorkLayer: NetWorkAPI {
-
-    
 
     private let urlSession: URLSession
     private let logger: Logger // Assuming you have a logger implementation
@@ -39,6 +63,56 @@ final public class NetWorkLayer: NetWorkAPI {
         self.urlSession = urlSession
         self.logger = logger
     }
+
+    public func request<T>(
+        _ endpoint: URLRequest,
+        for type: T.Type,
+        decoder: JSONDecoder
+    ) async -> Result<T, any Error> where T : Decodable {
+
+        do {
+            let (data, response) = try await URLSession.shared.data(for: endpoint)
+
+            guard let httpResponse = response as? HTTPURLResponse else {
+                return .failure(NetworkError.invalidResponse)
+            }
+
+            if httpResponse.statusCode == 200 {
+
+                let jsonObject = try JSONSerialization.jsonObject(
+                    with: data,
+                    options: []
+                )
+
+                logger.log(
+                    level: .info,
+                    message: "\(jsonObject)"
+                )
+
+                let decodedData = try JSONDecoder()
+                    .decode(
+                        T.self,
+                        from: data
+                    )
+                return .success(decodedData)
+            } else {
+                return .failure(
+                    NetworkError.badResponse(
+                        statusCode: 400,
+                        errorText: "Bad response"
+                    )
+                )
+
+            }
+        } catch let eror  {
+            return .failure((eror))
+        }
+    }
+
+}
+
+
+extension NetWorkLayer {
 
     public func request<T: Decodable>(
         _ endpoint: URLRequest,
@@ -69,8 +143,6 @@ final public class NetWorkLayer: NetWorkAPI {
                     }
                     continuation.finish()
                 } catch {
-
-                    print("wtf", error)
                     logger.log(level: .trace, message: "Failed to use stream: \(error)")
                     continuation.finish(throwing: error)
                 }
@@ -96,70 +168,4 @@ final public class NetWorkLayer: NetWorkAPI {
         }
 
     }
-
-
-    public func request<T>(
-        _ endpoint: URLRequest,
-        for type: T.Type,
-        decoder: JSONDecoder
-    ) async -> Result<T, any Error> where T : Decodable {
-
-        do {
-            let (data, response) = try await URLSession.shared.data(for: endpoint)
-
-            guard let httpResponse = response as? HTTPURLResponse else {
-                throw NetworkError.invalidResponse
-            }
-
-            if httpResponse.statusCode == 200 {
-                print("response", httpResponse)
-
-                let jsonObject = try JSONSerialization.jsonObject(with: data, options: [])
-                let jsonData = try JSONSerialization.data(withJSONObject: jsonObject, options: [])
-                print("json ==>", jsonData)
-
-                let decodedData = try JSONDecoder()
-                    .decode(
-                        T.self,
-                        from: data
-                    )
-                return .success(decodedData)
-            } else {
-                throw NetworkError.badResponse(
-                    statusCode: 400,
-                    errorText: "Bad response"
-                )
-            }
-        } catch let eror  {
-            return .failure((eror))
-        }
-    }
-
-//    private func request(_ endpoint: EndPointType, completion: @escaping (Result<APIResponse, APIError>) -> Void) {
-//        guard let request = buildURLRequest(from: endpoint) else {
-//            completion(.failure(.invalidEndpoint))
-//            return
-//        }
-//
-//        let task = URLSession.shared.dataTask(with: request) { [weak self] data, response, error in
-//            self?.logger.log(request: request, data: data, response: response as? HTTPURLResponse, error: error)
-//
-//            if let error = error {
-//                completion(.failure(.networkError(error: error)))
-//                return
-//            }
-//
-//            guard let data = data, let httpResponse = response as? HTTPURLResponse,
-//                  (200 ..< 400).contains(httpResponse.statusCode)
-//            else {
-//                completion(.failure(.badServerResponse))
-//                return
-//            }
-//
-//            completion(.success((data, httpResponse.statusCode)))
-//        }
-//
-//        task.resume()
-//    }
-
 }

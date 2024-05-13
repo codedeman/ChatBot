@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A3151282BEC6A14002BCAF9 /* DebugMenu in Frameworks */ = {isa = PBXBuildFile; productRef = 0A3151272BEC6A14002BCAF9 /* DebugMenu */; };
 		0A3CD8862BD4B033006A217C /* DashBoard in Frameworks */ = {isa = PBXBuildFile; productRef = 0A3CD8852BD4B033006A217C /* DashBoard */; };
 		0A4CE9252BCFABCE003D7865 /* Message in Frameworks */ = {isa = PBXBuildFile; productRef = 0A4CE9242BCFABCE003D7865 /* Message */; };
 		0A629B9F2BCE5D53007DDE57 /* ScanAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A629B9E2BCE5D53007DDE57 /* ScanAppApp.swift */; };
@@ -18,6 +19,7 @@
 		0A629BBC2BCE5D55007DDE57 /* ScanAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A629BBB2BCE5D55007DDE57 /* ScanAppUITestsLaunchTests.swift */; };
 		0AB522BB2BD24CC2001CAF84 /* NetWork in Frameworks */ = {isa = PBXBuildFile; productRef = 0AB522BA2BD24CC2001CAF84 /* NetWork */; };
 		0AB522BD2BD24CC9001CAF84 /* Logger in Frameworks */ = {isa = PBXBuildFile; productRef = 0AB522BC2BD24CC9001CAF84 /* Logger */; };
+		0AC085B02BEA26B9004EDE30 /* ViewControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC085AF2BEA26B9004EDE30 /* ViewControlViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A3539C02BD8BA3100700444 /* MessageTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = MessageTests.xctestplan; sourceTree = "<group>"; };
+		0A3539C12BD8BC5300700444 /* ScanApp.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = ScanApp.xctestplan; sourceTree = "<group>"; };
+		0A5EA31B2BE9D4EB00364970 /* DebugMenu */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DebugMenu; sourceTree = "<group>"; };
 		0A629B9B2BCE5D53007DDE57 /* ScanApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A629B9E2BCE5D53007DDE57 /* ScanAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanAppApp.swift; sourceTree = "<group>"; };
 		0A629BA02BCE5D53007DDE57 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +59,10 @@
 		0A680FF72BD7B20F004E58D0 /* ScanApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScanApp.entitlements; sourceTree = "<group>"; };
 		0AA5342D2BD1183E00D404B4 /* Logger */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Logger; sourceTree = "<group>"; };
 		0AA5342E2BD17C2200D404B4 /* DashBoard */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DashBoard; sourceTree = "<group>"; };
+		0AC085AF2BEA26B9004EDE30 /* ViewControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControlViewController.swift; sourceTree = "<group>"; };
+		0AEE649D2BE9A7A100FC7CAC /* QA */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = QA; sourceTree = "<group>"; };
+		0AEE649E2BE9AB8100FC7CAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0AFE83182BE1F13E004B29F0 /* TestSupport */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = TestSupport; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +72,7 @@
 			files = (
 				0AB522BD2BD24CC9001CAF84 /* Logger in Frameworks */,
 				0A3CD8862BD4B033006A217C /* DashBoard in Frameworks */,
+				0A3151282BEC6A14002BCAF9 /* DebugMenu in Frameworks */,
 				0A4CE9252BCFABCE003D7865 /* Message in Frameworks */,
 				0AB522BB2BD24CC2001CAF84 /* NetWork in Frameworks */,
 			);
@@ -88,6 +98,8 @@
 		0A629B922BCE5D53007DDE57 = {
 			isa = PBXGroup;
 			children = (
+				0A3539C12BD8BC5300700444 /* ScanApp.xctestplan */,
+				0A3539C02BD8BA3100700444 /* MessageTests.xctestplan */,
 				0A629B9D2BCE5D53007DDE57 /* ScanApp */,
 				0A629BAE2BCE5D55007DDE57 /* ScanAppTests */,
 				0A629BB82BCE5D55007DDE57 /* ScanAppUITests */,
@@ -109,6 +121,9 @@
 		0A629B9D2BCE5D53007DDE57 /* ScanApp */ = {
 			isa = PBXGroup;
 			children = (
+				0AEE649E2BE9AB8100FC7CAC /* Info.plist */,
+				0AEE649C2BE9A6EF00FC7CAC /* Scenarios */,
+				0AFE83172BE1EF75004B29F0 /* TestSupport */,
 				0A680FF72BD7B20F004E58D0 /* ScanApp.entitlements */,
 				0AE062062BCFD5C000E5D89B /* Foundation */,
 				0A629BCD2BCE6E8A007DDE57 /* Share */,
@@ -118,6 +133,7 @@
 				0A629BA02BCE5D53007DDE57 /* ContentView.swift */,
 				0A629BA22BCE5D54007DDE57 /* Assets.xcassets */,
 				0A629BA42BCE5D54007DDE57 /* Preview Content */,
+				0AC085AF2BEA26B9004EDE30 /* ViewControlViewController.swift */,
 			);
 			path = ScanApp;
 			sourceTree = "<group>";
@@ -187,6 +203,23 @@
 			path = Foundation;
 			sourceTree = "<group>";
 		};
+		0AEE649C2BE9A6EF00FC7CAC /* Scenarios */ = {
+			isa = PBXGroup;
+			children = (
+				0A5EA31B2BE9D4EB00364970 /* DebugMenu */,
+				0AEE649D2BE9A7A100FC7CAC /* QA */,
+			);
+			path = Scenarios;
+			sourceTree = "<group>";
+		};
+		0AFE83172BE1EF75004B29F0 /* TestSupport */ = {
+			isa = PBXGroup;
+			children = (
+				0AFE83182BE1F13E004B29F0 /* TestSupport */,
+			);
+			path = TestSupport;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -208,6 +241,7 @@
 				0AB522BA2BD24CC2001CAF84 /* NetWork */,
 				0AB522BC2BD24CC9001CAF84 /* Logger */,
 				0A3CD8852BD4B033006A217C /* DashBoard */,
+				0A3151272BEC6A14002BCAF9 /* DebugMenu */,
 			);
 			productName = ScanApp;
 			productReference = 0A629B9B2BCE5D53007DDE57 /* ScanApp.app */;
@@ -326,6 +360,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AC085B02BEA26B9004EDE30 /* ViewControlViewController.swift in Sources */,
 				0A629BA12BCE5D53007DDE57 /* ContentView.swift in Sources */,
 				0A629B9F2BCE5D53007DDE57 /* ScanAppApp.swift in Sources */,
 			);
@@ -495,6 +530,8 @@
 				DEVELOPMENT_TEAM = PBBT599Q77;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScanApp/Info.plist;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -530,6 +567,8 @@
 				DEVELOPMENT_TEAM = PBBT599Q77;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScanApp/Info.plist;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -682,6 +721,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		0A3151272BEC6A14002BCAF9 /* DebugMenu */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DebugMenu;
+		};
 		0A3CD8852BD4B033006A217C /* DashBoard */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = DashBoard;

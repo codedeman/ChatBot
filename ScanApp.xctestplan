@@ -1,0 +1,44 @@
+{
+  "configurations" : [
+    {
+      "id" : "D739933D-2D62-4649-AE92-04919241FE87",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:ScanApp.xcodeproj",
+      "identifier" : "0A629B9A2BCE5D53007DDE57",
+      "name" : "ScanApp"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:ScanApp.xcodeproj",
+        "identifier" : "0A629BAA2BCE5D55007DDE57",
+        "name" : "ScanAppTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:ScanApp.xcodeproj",
+        "identifier" : "0A629BB42BCE5D55007DDE57",
+        "name" : "ScanAppUITests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:..\/Message",
+        "identifier" : "MessageTests",
+        "name" : "MessageTests"
+      }
+    }
+  ],
+  "version" : 1
+}
