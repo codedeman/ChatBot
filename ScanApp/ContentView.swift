@@ -6,9 +6,8 @@
 //
 
 import SwiftUI
-import DebugMenu
-import Pulse
-import PulseUI
+//import Pulse
+//import PulseUI
 import Message
 import Logger
 import NetWork

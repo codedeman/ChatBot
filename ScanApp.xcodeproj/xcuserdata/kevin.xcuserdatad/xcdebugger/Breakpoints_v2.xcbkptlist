@@ -204,36 +204,6 @@
             endingLineNumber = "26"
             landmarkName = "log(request:data:response:error:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "9617270D-A89C-43FA-8CA9-ABD9B5C4A96F - 45dd56db7f169d3e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Logger.Loggable.log(request: Swift.Optional&lt;Foundation.URLRequest&gt;, data: Swift.Optional&lt;Foundation.Data&gt;, response: Swift.Optional&lt;__C.NSHTTPURLResponse&gt;, error: Swift.Optional&lt;Swift.Error&gt;) -&gt; ()"
-                  moduleName = "NetWorkTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kevin/ScanApp/ScanApp/Foundation/Logger/Sources/Logger/Logger+NetWork.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26">
-               </Location>
-               <Location
-                  uuid = "9617270D-A89C-43FA-8CA9-ABD9B5C4A96F - f5fd1682e4bf57fa"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Logger.Loggable.log(request: Swift.Optional&lt;Foundation.URLRequest&gt;, data: Swift.Optional&lt;Foundation.Data&gt;, response: Swift.Optional&lt;__C.NSHTTPURLResponse&gt;, error: Swift.Optional&lt;Swift.Error&gt;) -&gt; ()"
-                  moduleName = "ScanApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kevin/ScanApp/ScanApp/Foundation/Logger/Sources/Logger/Logger+NetWork.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -424,36 +394,6 @@
             endingLineNumber = "96"
             landmarkName = "request(_:for:decoder:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "A0B3E94D-564E-471B-9AD3-B78D7AC528AC - ab01fcf77b72a923"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for NetWork.NetWorkLayer.request&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(_: Foundation.URLRequest, for: &#x3c4;_0_0.Type, decoder: Foundation.JSONDecoder) async -&gt; Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;"
-                  moduleName = "NetWorkTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kevin/ScanApp/ScanApp/Cores/NetWork/Sources/NetWork/NetWork.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "153"
-                  endingLineNumber = "153">
-               </Location>
-               <Location
-                  uuid = "A0B3E94D-564E-471B-9AD3-B78D7AC528AC - 1b21bcaee0db9adf"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for NetWork.NetWorkLayer.request&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(_: Foundation.URLRequest, for: &#x3c4;_0_0.Type, decoder: Foundation.JSONDecoder) async -&gt; Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;"
-                  moduleName = "ScanApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kevin/ScanApp/ScanApp/Cores/NetWork/Sources/NetWork/NetWork.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "97"
-                  endingLineNumber = "97">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -470,36 +410,6 @@
             endingLineNumber = "95"
             landmarkName = "request(_:for:decoder:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "3FBBAA30-1947-488D-B3F8-3FEDAF7DBB22 - ab01fcf77b72a923"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for NetWork.NetWorkLayer.request&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(_: Foundation.URLRequest, for: &#x3c4;_0_0.Type, decoder: Foundation.JSONDecoder) async -&gt; Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;"
-                  moduleName = "NetWorkTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kevin/ScanApp/ScanApp/Cores/NetWork/Sources/NetWork/NetWork.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "153"
-                  endingLineNumber = "153">
-               </Location>
-               <Location
-                  uuid = "3FBBAA30-1947-488D-B3F8-3FEDAF7DBB22 - 1b21bcaee0db9adf"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for NetWork.NetWorkLayer.request&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(_: Foundation.URLRequest, for: &#x3c4;_0_0.Type, decoder: Foundation.JSONDecoder) async -&gt; Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;"
-                  moduleName = "ScanApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kevin/ScanApp/ScanApp/Cores/NetWork/Sources/NetWork/NetWork.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "97"
-                  endingLineNumber = "97">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -516,36 +426,6 @@
             endingLineNumber = "97"
             landmarkName = "request(_:for:decoder:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "BFF97386-A254-45F3-91E0-84A41EBD0E8E - ab01fcf77b72a923"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for NetWork.NetWorkLayer.request&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(_: Foundation.URLRequest, for: &#x3c4;_0_0.Type, decoder: Foundation.JSONDecoder) async -&gt; Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;"
-                  moduleName = "NetWorkTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kevin/ScanApp/ScanApp/Cores/NetWork/Sources/NetWork/NetWork.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "153"
-                  endingLineNumber = "153">
-               </Location>
-               <Location
-                  uuid = "BFF97386-A254-45F3-91E0-84A41EBD0E8E - 1b21bcaee0db9adf"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for NetWork.NetWorkLayer.request&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(_: Foundation.URLRequest, for: &#x3c4;_0_0.Type, decoder: Foundation.JSONDecoder) async -&gt; Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;"
-                  moduleName = "ScanApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kevin/ScanApp/ScanApp/Cores/NetWork/Sources/NetWork/NetWork.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "97"
-                  endingLineNumber = "97">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -562,36 +442,6 @@
             endingLineNumber = "101"
             landmarkName = "request(_:for:decoder:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "971C86F9-95AD-42C7-AC72-95F6FCB6B10E - ab01fcf77b72a878"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for NetWork.NetWorkLayer.request&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(_: Foundation.URLRequest, for: &#x3c4;_0_0.Type, decoder: Foundation.JSONDecoder) async -&gt; Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;"
-                  moduleName = "NetWorkTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kevin/ScanApp/ScanApp/Cores/NetWork/Sources/NetWork/NetWork.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "158"
-                  endingLineNumber = "158">
-               </Location>
-               <Location
-                  uuid = "971C86F9-95AD-42C7-AC72-95F6FCB6B10E - 1b21bcaee0db9a74"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for NetWork.NetWorkLayer.request&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(_: Foundation.URLRequest, for: &#x3c4;_0_0.Type, decoder: Foundation.JSONDecoder) async -&gt; Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;"
-                  moduleName = "ScanApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kevin/ScanApp/ScanApp/Cores/NetWork/Sources/NetWork/NetWork.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "102"
-                  endingLineNumber = "102">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -608,36 +458,6 @@
             endingLineNumber = "100"
             landmarkName = "request(_:for:decoder:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "6EE07352-2E6B-45C5-8AEB-37B3DC59C987 - ab01fcf77b72a986"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for NetWork.NetWorkLayer.request&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(_: Foundation.URLRequest, for: &#x3c4;_0_0.Type, decoder: Foundation.JSONDecoder) async -&gt; Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;"
-                  moduleName = "NetWorkTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kevin/ScanApp/ScanApp/Cores/NetWork/Sources/NetWork/NetWork.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "156"
-                  endingLineNumber = "156">
-               </Location>
-               <Location
-                  uuid = "6EE07352-2E6B-45C5-8AEB-37B3DC59C987 - 1b21bcaee0db9a3a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for NetWork.NetWorkLayer.request&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(_: Foundation.URLRequest, for: &#x3c4;_0_0.Type, decoder: Foundation.JSONDecoder) async -&gt; Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;"
-                  moduleName = "ScanApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kevin/ScanApp/ScanApp/Cores/NetWork/Sources/NetWork/NetWork.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "100"
-                  endingLineNumber = "100">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -714,36 +534,36 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "77"
             endingLineNumber = "77"
-            landmarkName = "request(_:for:decoder:)"
-            landmarkType = "7">
+            landmarkName = "NetWorkLayer"
+            landmarkType = "3">
             <Locations>
                <Location
-                  uuid = "05061902-2CBC-4021-9109-F8EF7FCA882E - ab01fcf77b7254bf"
+                  uuid = "05061902-2CBC-4021-9109-F8EF7FCA882E - ddf46cae73c72d08"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for NetWork.NetWorkLayer.request&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(_: Foundation.URLRequest, for: &#x3c4;_0_0.Type, decoder: Foundation.JSONDecoder) async -&gt; Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;"
-                  moduleName = "NetWorkTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kevin/ScanApp/ScanApp/Cores/NetWork/Sources/NetWork/NetWork.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "133"
-                  endingLineNumber = "133">
-               </Location>
-               <Location
-                  uuid = "05061902-2CBC-4021-9109-F8EF7FCA882E - 1b21bcaee0db9533"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for NetWork.NetWorkLayer.request&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(_: Foundation.URLRequest, for: &#x3c4;_0_0.Type, decoder: Foundation.JSONDecoder) async -&gt; Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;"
+                  symbolName = "NetWork.NetWorkLayer.request&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(_: Foundation.URLRequest, for: &#x3c4;_0_0.Type, decoder: Foundation.JSONDecoder) async -&gt; Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;"
                   moduleName = "ScanApp"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kevin/ScanApp/ScanApp/Cores/NetWork/Sources/NetWork/NetWork.swift"
+                  urlString = "file:///Users/kevin/ChatBot/ScanApp/Cores/NetWork/Sources/NetWork/NetWork.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "77"
-                  endingLineNumber = "77">
+                  startingLineNumber = "119"
+                  endingLineNumber = "119">
+               </Location>
+               <Location
+                  uuid = "05061902-2CBC-4021-9109-F8EF7FCA882E - f95afbfa9c05a85a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for NetWork.NetWorkLayer.request&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(_: Foundation.URLRequest, for: &#x3c4;_0_0.Type, decoder: Foundation.JSONDecoder) async -&gt; Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;"
+                  moduleName = "ScanApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kevin/ChatBot/ScanApp/Cores/NetWork/Sources/NetWork/NetWork.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "119"
+                  endingLineNumber = "119">
                </Location>
             </Locations>
          </BreakpointContent>

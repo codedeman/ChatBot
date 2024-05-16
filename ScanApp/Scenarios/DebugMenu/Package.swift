@@ -20,6 +20,10 @@ let package = Package(
             url: "https://github.com/kean/Pulse",
             .upToNextMajor(from: "0.20.0")
         ),
+        .package(
+            url: "https://github.com/antranapp/Scenarios",
+            .exact("2.3.0")
+        ),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -27,6 +31,7 @@ let package = Package(
         .target(
             name: "DebugMenu",
             dependencies: [
+                "Scenarios",
                 "Pulse",
                 .product(name: "PulseUI", package: "Pulse"),
             ]

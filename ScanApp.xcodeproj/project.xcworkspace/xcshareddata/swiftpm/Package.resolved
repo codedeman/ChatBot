@@ -1,5 +1,5 @@
 {
-  "originHash" : "1dfdf821fdc13ce5c48199e53d7ca7ee4cf32c675c309837ba6f3196885bbb7e",
+  "originHash" : "7040e4c0727f004745a6e9ebe0ac4080f68f8d5935a515ff16099e182ed27177",
   "pins" : [
     {
       "identity" : "highlightr",
@@ -26,6 +26,15 @@
       "state" : {
         "revision" : "ba7a0e4668de7074470bd37a60b1f89325a416bb",
         "version" : "0.20.2"
+      }
+    },
+    {
+      "identity" : "scenarios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/antranapp/Scenarios",
+      "state" : {
+        "revision" : "27ebf803c3aa42c5bcc79363c0cb219873df6c1a",
+        "version" : "2.3.0"
       }
     },
     {

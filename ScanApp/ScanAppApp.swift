@@ -9,10 +9,10 @@ import SwiftUI
 import Message
 import Logger
 import NetWork
-import DashBoard
-import Pulse
-import PulseUI
-import DebugMenu
+//import DashBoard
+//import Pulse
+//import PulseUI
+//import DebugMenu
 @main
 struct ScanAppApp: App {
     var body: some Scene {

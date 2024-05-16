@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A3151282BEC6A14002BCAF9 /* DebugMenu in Frameworks */ = {isa = PBXBuildFile; productRef = 0A3151272BEC6A14002BCAF9 /* DebugMenu */; };
-		0A3CD8862BD4B033006A217C /* DashBoard in Frameworks */ = {isa = PBXBuildFile; productRef = 0A3CD8852BD4B033006A217C /* DashBoard */; };
-		0A4CE9252BCFABCE003D7865 /* Message in Frameworks */ = {isa = PBXBuildFile; productRef = 0A4CE9242BCFABCE003D7865 /* Message */; };
+		0A0EF99B2BF5B90700FFC425 /* Logger in Frameworks */ = {isa = PBXBuildFile; productRef = 0A0EF99A2BF5B90700FFC425 /* Logger */; };
 		0A629B9F2BCE5D53007DDE57 /* ScanAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A629B9E2BCE5D53007DDE57 /* ScanAppApp.swift */; };
 		0A629BA12BCE5D53007DDE57 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A629BA02BCE5D53007DDE57 /* ContentView.swift */; };
 		0A629BA32BCE5D54007DDE57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A629BA22BCE5D54007DDE57 /* Assets.xcassets */; };
@@ -17,9 +15,9 @@
 		0A629BB02BCE5D55007DDE57 /* ScanAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A629BAF2BCE5D55007DDE57 /* ScanAppTests.swift */; };
 		0A629BBA2BCE5D55007DDE57 /* ScanAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A629BB92BCE5D55007DDE57 /* ScanAppUITests.swift */; };
 		0A629BBC2BCE5D55007DDE57 /* ScanAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A629BBB2BCE5D55007DDE57 /* ScanAppUITestsLaunchTests.swift */; };
-		0AB522BB2BD24CC2001CAF84 /* NetWork in Frameworks */ = {isa = PBXBuildFile; productRef = 0AB522BA2BD24CC2001CAF84 /* NetWork */; };
-		0AB522BD2BD24CC9001CAF84 /* Logger in Frameworks */ = {isa = PBXBuildFile; productRef = 0AB522BC2BD24CC9001CAF84 /* Logger */; };
 		0AC085B02BEA26B9004EDE30 /* ViewControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC085AF2BEA26B9004EDE30 /* ViewControlViewController.swift */; };
+		0ADE16CA2BF5B71C00301FDE /* Message in Frameworks */ = {isa = PBXBuildFile; productRef = 0ADE16C92BF5B71C00301FDE /* Message */; };
+		0ADE16CC2BF5B72100301FDE /* NetWork in Frameworks */ = {isa = PBXBuildFile; productRef = 0ADE16CB2BF5B72100301FDE /* NetWork */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +40,6 @@
 /* Begin PBXFileReference section */
 		0A3539C02BD8BA3100700444 /* MessageTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = MessageTests.xctestplan; sourceTree = "<group>"; };
 		0A3539C12BD8BC5300700444 /* ScanApp.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = ScanApp.xctestplan; sourceTree = "<group>"; };
-		0A5EA31B2BE9D4EB00364970 /* DebugMenu */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DebugMenu; sourceTree = "<group>"; };
 		0A629B9B2BCE5D53007DDE57 /* ScanApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A629B9E2BCE5D53007DDE57 /* ScanAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanAppApp.swift; sourceTree = "<group>"; };
 		0A629BA02BCE5D53007DDE57 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +57,7 @@
 		0AA5342D2BD1183E00D404B4 /* Logger */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Logger; sourceTree = "<group>"; };
 		0AA5342E2BD17C2200D404B4 /* DashBoard */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DashBoard; sourceTree = "<group>"; };
 		0AC085AF2BEA26B9004EDE30 /* ViewControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControlViewController.swift; sourceTree = "<group>"; };
+		0AE5CCE92BF5B0CC00F2F262 /* DebugMenu */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DebugMenu; sourceTree = "<group>"; };
 		0AEE649D2BE9A7A100FC7CAC /* QA */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = QA; sourceTree = "<group>"; };
 		0AEE649E2BE9AB8100FC7CAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		0AFE83182BE1F13E004B29F0 /* TestSupport */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = TestSupport; sourceTree = "<group>"; };
@@ -70,11 +68,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AB522BD2BD24CC9001CAF84 /* Logger in Frameworks */,
-				0A3CD8862BD4B033006A217C /* DashBoard in Frameworks */,
-				0A3151282BEC6A14002BCAF9 /* DebugMenu in Frameworks */,
-				0A4CE9252BCFABCE003D7865 /* Message in Frameworks */,
-				0AB522BB2BD24CC2001CAF84 /* NetWork in Frameworks */,
+				0A0EF99B2BF5B90700FFC425 /* Logger in Frameworks */,
+				0ADE16CA2BF5B71C00301FDE /* Message in Frameworks */,
+				0ADE16CC2BF5B72100301FDE /* NetWork in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,11 +91,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0A629B922BCE5D53007DDE57 = {
+		0A0EF99C2BF5B95900FFC425 /* TestPlan */ = {
 			isa = PBXGroup;
 			children = (
 				0A3539C12BD8BC5300700444 /* ScanApp.xctestplan */,
 				0A3539C02BD8BA3100700444 /* MessageTests.xctestplan */,
+			);
+			path = TestPlan;
+			sourceTree = "<group>";
+		};
+		0A629B922BCE5D53007DDE57 = {
+			isa = PBXGroup;
+			children = (
 				0A629B9D2BCE5D53007DDE57 /* ScanApp */,
 				0A629BAE2BCE5D55007DDE57 /* ScanAppTests */,
 				0A629BB82BCE5D55007DDE57 /* ScanAppUITests */,
@@ -121,6 +124,7 @@
 		0A629B9D2BCE5D53007DDE57 /* ScanApp */ = {
 			isa = PBXGroup;
 			children = (
+				0A0EF99C2BF5B95900FFC425 /* TestPlan */,
 				0AEE649E2BE9AB8100FC7CAC /* Info.plist */,
 				0AEE649C2BE9A6EF00FC7CAC /* Scenarios */,
 				0AFE83172BE1EF75004B29F0 /* TestSupport */,
@@ -206,7 +210,7 @@
 		0AEE649C2BE9A6EF00FC7CAC /* Scenarios */ = {
 			isa = PBXGroup;
 			children = (
-				0A5EA31B2BE9D4EB00364970 /* DebugMenu */,
+				0AE5CCE92BF5B0CC00F2F262 /* DebugMenu */,
 				0AEE649D2BE9A7A100FC7CAC /* QA */,
 			);
 			path = Scenarios;
@@ -237,11 +241,9 @@
 			);
 			name = ScanApp;
 			packageProductDependencies = (
-				0A4CE9242BCFABCE003D7865 /* Message */,
-				0AB522BA2BD24CC2001CAF84 /* NetWork */,
-				0AB522BC2BD24CC9001CAF84 /* Logger */,
-				0A3CD8852BD4B033006A217C /* DashBoard */,
-				0A3151272BEC6A14002BCAF9 /* DebugMenu */,
+				0ADE16C92BF5B71C00301FDE /* Message */,
+				0ADE16CB2BF5B72100301FDE /* NetWork */,
+				0A0EF99A2BF5B90700FFC425 /* Logger */,
 			);
 			productName = ScanApp;
 			productReference = 0A629B9B2BCE5D53007DDE57 /* ScanApp.app */;
@@ -721,25 +723,17 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		0A3151272BEC6A14002BCAF9 /* DebugMenu */ = {
+		0A0EF99A2BF5B90700FFC425 /* Logger */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = DebugMenu;
+			productName = Logger;
 		};
-		0A3CD8852BD4B033006A217C /* DashBoard */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = DashBoard;
-		};
-		0A4CE9242BCFABCE003D7865 /* Message */ = {
+		0ADE16C92BF5B71C00301FDE /* Message */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Message;
 		};
-		0AB522BA2BD24CC2001CAF84 /* NetWork */ = {
+		0ADE16CB2BF5B72100301FDE /* NetWork */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = NetWork;
-		};
-		0AB522BC2BD24CC9001CAF84 /* Logger */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Logger;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

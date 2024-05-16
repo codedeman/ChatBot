@@ -30,7 +30,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:ScanApp.xctestplan"
+            reference = "container:ScanApp/TestPlan/ScanApp.xctestplan"
             default = "YES">
          </TestPlanReference>
       </TestPlans>
