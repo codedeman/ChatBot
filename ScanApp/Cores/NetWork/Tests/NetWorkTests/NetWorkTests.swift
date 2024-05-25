@@ -9,24 +9,26 @@ import NetWork
 
 final class NetWorkTests: XCTestCase {
 
-    var sut: NetWorkLayer!
+    var sut: NetWorkAPI!
 
     private var urlRequest: URLRequest {
-        let url = URL(string: "https://api.openai.com/v1/chat/completions")!
+        let url = URL(string: "https://")!
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = "POST"
         return urlRequest
     }
 
     override func setUp() {
-        let logger = Logger(label: "")
-        sut = .init(logger: logger)
         super.setUp()
+
+        let logger = Logger(label: "")
+        sut =  NetWorkLayer(logger: logger)
     }
 
     override func tearDown() {
-        sut = nil
         super.tearDown()
+        URLSessionMock.lastRequest = nil
+        sut = nil
     }
 
     func testPostRequestSucess() async throws {
@@ -53,7 +55,6 @@ final class NetWorkTests: XCTestCase {
     }
 
     func testPostFailse() async throws {
-//        invalid_request.json
         stub(condition: isPath("/v1/chat/completions")) { request in
             let fetchPathCaseEmpty = Bundle.module.path(
                 forResource: "invalid_request",
@@ -78,7 +79,10 @@ final class NetWorkTests: XCTestCase {
     }
 
 
+}
 
+struct MockResponse: Decodable {
+    let key: String
 }
 
 public struct MockStreamCompletionResponse: Decodable {
@@ -103,3 +107,5 @@ public struct StreamMessage: Decodable {
     }
 
 }
+
+

@@ -23,15 +23,16 @@ struct ContentView: View {
     let logger = Logger(label: "🤣")
 
     var body: some View {
-        MessageCenter(
-            vm: MessageViewModel(
-                messageRepository: DBMessageRepository(
-                    apiClientService: NetWorkLayer(
-                        logger: logger
-                    )
-                )
-            )
-        )
+        RequirementView()
+//        MessageCenter(
+//            vm: MessageViewModel(
+//                messageRepository: DBMessageRepository(
+//                    apiClientService: NetWorkLayer(
+//                        logger: logger
+//                    )
+//                )
+//            )
+//        )
         }
 }
 
