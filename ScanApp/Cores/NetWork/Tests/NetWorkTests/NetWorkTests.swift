@@ -78,34 +78,69 @@ final class NetWorkTests: XCTestCase {
         }
     }
 
+    //MARK: HTTP method
 
-}
+    func testGetMethod() async throws {
+        // Stub GET request
+        stub(condition: isMethodGET() && isHost("example.com")) { _ in
+            let stubData = Data()
+            return HTTPStubsResponse(data: stubData, statusCode: 200, headers: nil)
+        }
 
-struct MockResponse: Decodable {
-    let key: String
-}
+        let url = URL(string: "https://example.com/get")!
+        let request = URLRequest(url: url)
 
-public struct MockStreamCompletionResponse: Decodable {
-    let choices: [MockStreamChoice]
-}
+        let _: Result<MockResponse, Error> = await sut.request(request, for: MockResponse.self, decoder: JSONDecoder())
 
-public struct MockStreamChoice: Decodable {
-    let finishReason: String?
-    let message: StreamMessage
-}
-
-public struct StreamMessage: Decodable {
-    let role: String?
-    let content: String?
-
-    public init(
-        role: String?,
-        content: String?
-    ) {
-        self.role = role
-        self.content = content
+        XCTAssertEqual(request.httpMethod, "GET")
     }
 
+    func testPostMethod() async throws {
+        // Stub POST request
+        stub(condition: isMethodPOST() && isHost("example.com")) { _ in
+            let stubData = Data()
+            return HTTPStubsResponse(data: stubData, statusCode: 200, headers: nil)
+        }
+
+        var request = URLRequest(url: URL(string: "https://example.com/post")!)
+        request.httpMethod = "POST"
+
+        let _: Result<MockResponse, Error> = await sut.request(request, for: MockResponse.self, decoder: JSONDecoder())
+
+        XCTAssertEqual(request.httpMethod, "POST")
+    }
+
+    func testPutMethod() async throws {
+        // Stub PUT request
+        stub(condition: isMethodPUT() && isHost("example.com")) { _ in
+            let stubData = Data()
+            return HTTPStubsResponse(data: stubData, statusCode: 200, headers: nil)
+        }
+
+        var request = URLRequest(url: URL(string: "https://example.com/put")!)
+        request.httpMethod = "PUT"
+
+        let _: Result<MockResponse, Error> = await sut.request(request, for: MockResponse.self, decoder: JSONDecoder())
+
+        XCTAssertEqual(request.httpMethod, "PUT")
+    }
+
+    func testDeleteMethod() async throws {
+           // Stub DELETE request
+           stub(condition: isMethodDELETE() && isHost("example.com")) { _ in
+               let stubData = Data()
+               return HTTPStubsResponse(data: stubData, statusCode: 200, headers: nil)
+           }
+
+           var request = URLRequest(url: URL(string: "https://example.com/delete")!)
+           request.httpMethod = "DELETE"
+
+           let _: Result<MockResponse, Error> = await sut.request(request, for: MockResponse.self, decoder: JSONDecoder())
+
+           XCTAssertEqual(request.httpMethod, "DELETE")
+       }
+
 }
+
 
 
