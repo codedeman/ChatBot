@@ -38,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A2819F52C05B3C2000ABBF9 /* Message */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Message; sourceTree = "<group>"; };
 		0A3539C02BD8BA3100700444 /* MessageTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = MessageTests.xctestplan; sourceTree = "<group>"; };
 		0A3539C12BD8BC5300700444 /* ScanApp.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = ScanApp.xctestplan; sourceTree = "<group>"; };
 		0A629B9B2BCE5D53007DDE57 /* ScanApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,7 +51,6 @@
 		0A629BB52BCE5D55007DDE57 /* ScanAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScanAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A629BB92BCE5D55007DDE57 /* ScanAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanAppUITests.swift; sourceTree = "<group>"; };
 		0A629BBB2BCE5D55007DDE57 /* ScanAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		0A629BC92BCE607E007DDE57 /* Message */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Message; path = ../../../Message; sourceTree = "<group>"; };
 		0A629BCC2BCE6274007DDE57 /* NetWork */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = NetWork; sourceTree = "<group>"; };
 		0A629BD52BCE84A7007DDE57 /* CoreUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CoreUI; sourceTree = "<group>"; };
 		0A680FF72BD7B20F004E58D0 /* ScanApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScanApp.entitlements; sourceTree = "<group>"; };
@@ -170,8 +170,8 @@
 		0A629BC82BCE603E007DDE57 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				0A2819F52C05B3C2000ABBF9 /* Message */,
 				0AA5342E2BD17C2200D404B4 /* DashBoard */,
-				0A629BC92BCE607E007DDE57 /* Message */,
 			);
 			path = Features;
 			sourceTree = "<group>";
