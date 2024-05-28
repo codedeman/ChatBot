@@ -33,6 +33,7 @@
       }
     },
     {
+      "parallelizable" : true,
       "target" : {
         "containerPath" : "container:..\/Message",
         "identifier" : "MessageTests",
