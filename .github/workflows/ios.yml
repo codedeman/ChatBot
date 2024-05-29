@@ -57,23 +57,8 @@ jobs:
             -configuration Debug \
             CODE_SIGN_IDENTITY="iPhone Developer" \
             PROVISIONING_PROFILE_SPECIFIER="" \
-            -enableCodeCoverage YES | xcpretty --test --color --report junit --output build/reports/tests/test-results.xml
+            -enableCodeCoverage YES | tee xcodebuild.log | xcpretty --test --color
 
-      - name: Check if test results file exists
-        run: |
-          if [ -f build/reports/tests/test-results.xml ]; then
-            echo "Test results file exists."
-          else
-            echo "Test results file does not exist."
-            exit 1
-          fi
-
-      - name: Print Test Results
-        if: always()
-        run: |
-          echo "Printing the first 20 lines of the test results file for debugging:"
-          head -n 20 build/reports/tests/test-results.xml
-          
       - name: Display Test Case Passed and Test Coverage
         if: always()
         run: |
@@ -84,12 +69,3 @@ jobs:
           # Extract test coverage from xcodebuild log
           TEST_COVERAGE=$(grep -o 'Test coverage.*' xcodebuild.log)
           echo "Test Coverage: $TEST_COVERAGE"
-
-      - name: Upload test results
-        if: always()
-        uses: actions/upload-artifact@v2
-        with:
-          name: test-results
-          path: |
-            ~/Library/Developer/Xcode/DerivedData/ScanApp*/Logs/Test/*.xcresult
-            build/reports/tests/test-results.xml
