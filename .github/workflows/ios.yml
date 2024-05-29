@@ -78,7 +78,7 @@ jobs:
         if: always()
         run: |
           echo "Test Results Summary:"
-          grep "<testsuite " build/reports/tests/test-results.xml
+          grep "<testsuite" build/reports/tests/test-results.xml || echo "No <testsuite> tags found in the test results."
 
       - name: Upload test results
         if: always()
