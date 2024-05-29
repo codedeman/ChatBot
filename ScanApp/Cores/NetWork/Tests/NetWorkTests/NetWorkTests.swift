@@ -20,7 +20,6 @@ final class NetWorkTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
-
         let logger = Logger(label: "")
         sut =  NetWorkLayer(logger: logger)
     }

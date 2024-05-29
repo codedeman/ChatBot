@@ -21,6 +21,48 @@
                ReferencedContainer = "container:ScanApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "NetWork"
+               BuildableName = "NetWork"
+               BlueprintName = "NetWork"
+               ReferencedContainer = "container:ScanApp/Cores/NetWork">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "Message"
+               BuildableName = "Message"
+               BlueprintName = "Message"
+               ReferencedContainer = "container:ScanApp/Features/Message">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0A629BAA2BCE5D55007DDE57"
+               BuildableName = "ScanAppTests.xctest"
+               BlueprintName = "ScanAppTests"
+               ReferencedContainer = "container:ScanApp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -28,6 +70,15 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
+      <PreActions>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "Run Script"
+               scriptText = "# Type a script or drag a script file from your workspace to insert its path.&#10;">
+            </ActionContent>
+         </ExecutionAction>
+      </PreActions>
       <TestPlans>
          <TestPlanReference
             reference = "container:ScanApp/TestPlan/ScanApp.xctestplan"
@@ -43,17 +94,6 @@
                BlueprintIdentifier = "0A629BAA2BCE5D55007DDE57"
                BuildableName = "ScanAppTests.xctest"
                BlueprintName = "ScanAppTests"
-               ReferencedContainer = "container:ScanApp.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO"
-            parallelizable = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0A629BB42BCE5D55007DDE57"
-               BuildableName = "ScanAppUITests.xctest"
-               BlueprintName = "ScanAppUITests"
                ReferencedContainer = "container:ScanApp.xcodeproj">
             </BuildableReference>
          </TestableReference>

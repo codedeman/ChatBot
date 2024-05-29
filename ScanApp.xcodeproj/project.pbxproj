@@ -39,7 +39,6 @@
 
 /* Begin PBXFileReference section */
 		0A2819F52C05B3C2000ABBF9 /* Message */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Message; sourceTree = "<group>"; };
-		0A3539C02BD8BA3100700444 /* MessageTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = MessageTests.xctestplan; sourceTree = "<group>"; };
 		0A3539C12BD8BC5300700444 /* ScanApp.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = ScanApp.xctestplan; sourceTree = "<group>"; };
 		0A629B9B2BCE5D53007DDE57 /* ScanApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A629B9E2BCE5D53007DDE57 /* ScanAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanAppApp.swift; sourceTree = "<group>"; };
@@ -95,7 +94,6 @@
 			isa = PBXGroup;
 			children = (
 				0A3539C12BD8BC5300700444 /* ScanApp.xctestplan */,
-				0A3539C02BD8BA3100700444 /* MessageTests.xctestplan */,
 			);
 			path = TestPlan;
 			sourceTree = "<group>";
@@ -263,6 +261,8 @@
 				0A629BAD2BCE5D55007DDE57 /* PBXTargetDependency */,
 			);
 			name = ScanAppTests;
+			packageProductDependencies = (
+			);
 			productName = ScanAppTests;
 			productReference = 0A629BAB2BCE5D55007DDE57 /* ScanAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";

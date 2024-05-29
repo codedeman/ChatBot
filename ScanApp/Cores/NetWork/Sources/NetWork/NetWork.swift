@@ -10,7 +10,7 @@ enum NetworkError: Error {
     case decodingFailed(Error)
 }
 
-public typealias ResponseHandler = (URLSessionDataTask, URLResponse) -> Void
+//public typealias ResponseHandler = (URLSessionDataTask, URLResponse) -> Void
 
 public protocol NetWorkAPI: AnyObject {
 //    func request<T: Decodable>(
@@ -49,6 +49,7 @@ public extension NetWorkAPI {
 }
 
 public final class NetWorkLayer: NSObject, NetWorkAPI {
+
     var logger: Logger
     var session: URLSessionProtocol
 
@@ -117,7 +118,6 @@ extension NetWorkLayer: URLSessionTaskDelegate, URLSessionDataDelegate {
         didReceive response: URLResponse,
         completionHandler: @escaping (URLSession.ResponseDisposition) -> Void
     ) {
-//          responseHandler(dataTask, response)
         if let httpResponse = response as? HTTPURLResponse,
            httpResponse.statusCode != 200
         {
