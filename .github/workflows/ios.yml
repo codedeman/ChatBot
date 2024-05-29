@@ -57,15 +57,31 @@ jobs:
             -configuration Debug \
             CODE_SIGN_IDENTITY="iPhone Developer" \
             PROVISIONING_PROFILE_SPECIFIER="" \
-            -enableCodeCoverage YES | tee xcodebuild.log | xcpretty --test --color
-
-      - name: Display Test Case Passed and Test Coverage
+            -enableCodeCoverage YES 
+  
+      - name: Print Entire xcodebuild Log
         if: always()
         run: |
-          # Extract test case passed count from xcodebuild log
+          echo "Printing the entire xcodebuild log for debugging:"
+          cat xcodebuild.log
+
+      - name: Extract Test Case Passed Count
+        if: always()
+        run: |
           TEST_CASES_PASSED=$(grep -o 'Test Case.*passed' xcodebuild.log | wc -l)
           echo "Test Cases Passed: $TEST_CASES_PASSED"
 
-          # Extract test coverage from xcodebuild log
+      - name: Extract Test Coverage
+        if: always()
+        run: |
           TEST_COVERAGE=$(grep -o 'Test coverage.*' xcodebuild.log)
           echo "Test Coverage: $TEST_COVERAGE"
+          
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: test-results
+          path: |
+            ~/Library/Developer/Xcode/DerivedData/ScanApp*/Logs/Test/*.xcresult
+            build/reports/tests/test-results.xml
