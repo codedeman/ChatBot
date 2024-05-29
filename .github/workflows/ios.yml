@@ -16,6 +16,7 @@ jobs:
       XCODE_PROJECT: ScanApp.xcodeproj
       XCODE_SCHEME: ScanApp
       TEST_TARGET: NetWork
+      SWIFT_PACKAGE_FRAMEWORK: NetWork
 
     steps:
       - name: Checkout repository
@@ -36,5 +37,5 @@ jobs:
             -project ${{ env.XCODE_PROJECT }} \
             -scheme ${{ env.XCODE_SCHEME }} \
             -destination 'platform=iOS Simulator,name=iPhone 15,OS=latest' \
-            -only-testing: "${{ env.TEST_TARGET }}" \
+            -only-testing: "${{ env.SWIFT_PACKAGE_FRAMEWORK }}" \
             -enableCodeCoverage YES
