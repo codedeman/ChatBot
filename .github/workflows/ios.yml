@@ -30,6 +30,10 @@ jobs:
         with:
           xcode-version: ${{ matrix.xcode-version }}
 
+      - name: Install xcpretty
+        run: |
+          gem install xcpretty
+
       - name: Add Dummy Provisioning Profile
         run: |
           mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
@@ -47,7 +51,7 @@ jobs:
 
       - name: Build and Test
         run: |
-          xcodebuild clean build test \
+          set -o pipefail && xcodebuild clean build test \
             -project ${{ env.XCODE_PROJECT }} \
             -scheme ${{ env.XCODE_SCHEME }} \
             -destination "platform=iOS Simulator,name=${{ matrix.device }},OS=${{ matrix.ios-version }}" \
@@ -63,3 +67,9 @@ jobs:
           name: test-results
           path: |
             ~/Library/Developer/Xcode/DerivedData/ScanApp*/Logs/Test/*.xcresult
+
+      - name: Display Test Results
+        if: always()
+        run: |
+          xcpretty -r json-compilation-database -o build/reports/tests/test-results.json
+          cat build/reports/tests/test-results.json
