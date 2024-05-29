@@ -73,12 +73,17 @@ jobs:
         run: |
           echo "Printing the first 20 lines of the test results file for debugging:"
           head -n 20 build/reports/tests/test-results.xml
-
-      - name: Display Test Results Summary
+          
+      - name: Display Test Case Passed and Test Coverage
         if: always()
         run: |
-          echo "Test Results Summary:"
-          grep "<testsuite" build/reports/tests/test-results.xml || echo "No <testsuite> tags found in the test results."
+          # Extract test case passed count from xcodebuild log
+          TEST_CASES_PASSED=$(grep -o 'Test Case.*passed' xcodebuild.log | wc -l)
+          echo "Test Cases Passed: $TEST_CASES_PASSED"
+
+          # Extract test coverage from xcodebuild log
+          TEST_COVERAGE=$(grep -o 'Test coverage.*' xcodebuild.log)
+          echo "Test Coverage: $TEST_COVERAGE"
 
       - name: Upload test results
         if: always()
