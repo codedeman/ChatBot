@@ -31,8 +31,7 @@ jobs:
           xcode-version: ${{ matrix.xcode-version }}
 
       - name: Install xcpretty
-        run: |
-          gem install xcpretty
+        run: gem install xcpretty
 
       - name: Add Dummy Provisioning Profile
         run: |
@@ -58,7 +57,16 @@ jobs:
             -configuration Debug \
             CODE_SIGN_IDENTITY="iPhone Developer" \
             PROVISIONING_PROFILE_SPECIFIER="" \
-            -enableCodeCoverage YES | xcpretty --test --color
+            -enableCodeCoverage YES | xcpretty --test --color --report junit --output build/reports/tests/test-results.xml
+
+      - name: Check if test results file exists
+        run: |
+          if [ -f build/reports/tests/test-results.xml ]; then
+            echo "Test results file exists."
+          else
+            echo "Test results file does not exist."
+            exit 1
+          fi
 
       - name: Upload test results
         if: always()
@@ -67,6 +75,7 @@ jobs:
           name: test-results
           path: |
             ~/Library/Developer/Xcode/DerivedData/ScanApp*/Logs/Test/*.xcresult
+            build/reports/tests/test-results.xml
 
       - name: Display Test Results
         if: always()
