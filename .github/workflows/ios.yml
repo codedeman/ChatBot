@@ -57,8 +57,8 @@ jobs:
             -configuration Debug \
             CODE_SIGN_IDENTITY="iPhone Developer" \
             PROVISIONING_PROFILE_SPECIFIER="" \
-            -enableCodeCoverage YES 
-  
+            -enableCodeCoverage YES | tee xcodebuild.log | xcpretty --test --color
+
       - name: Print Entire xcodebuild Log
         if: always()
         run: |
@@ -68,14 +68,23 @@ jobs:
       - name: Extract Test Case Passed Count
         if: always()
         run: |
-          TEST_CASES_PASSED=$(grep -o 'Test Case.*passed' xcodebuild.log | wc -l)
-          echo "Test Cases Passed: $TEST_CASES_PASSED"
+          if [ -f xcodebuild.log ]; then
+            TEST_CASES_PASSED=$(grep -o 'Test Case.*passed' xcodebuild.log | wc -l)
+            echo "Test Cases Passed: $TEST_CASES_PASSED"
+          else
+            echo "xcodebuild.log file not found."
+          fi
 
       - name: Extract Test Coverage
         if: always()
         run: |
-          TEST_COVERAGE=$(grep -o 'Test coverage.*' xcodebuild.log)
-          echo "Test Coverage: $TEST_COVERAGE"
+          if [ -f xcodebuild.log ]; then
+            TEST_COVERAGE=$(grep -o 'Test coverage.*' xcodebuild.log)
+            echo "Test Coverage: $TEST_COVERAGE"
+          else
+            echo "xcodebuild.log file not found."
+          fi
+
           
       - name: Upload test results
         if: always()
