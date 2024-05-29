@@ -36,5 +36,5 @@ jobs:
             -project ${{ env.XCODE_PROJECT }} \
             -scheme ${{ env.XCODE_SCHEME }} \
             -destination 'platform=iOS Simulator,name=iPhone 15,OS=latest' \
-            -only-testing: ${{ env.TEST_TARGET }} \
+            -only-testing: "${{ env.TEST_TARGET }}" \
             -enableCodeCoverage YES
