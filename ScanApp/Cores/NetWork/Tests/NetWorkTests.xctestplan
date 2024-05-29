@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "E7D4EEF8-1991-4279-B80E-304974AC6558",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:ScanApp\/Cores\/NetWork",
+        "identifier" : "NetWorkTests",
+        "name" : "NetWorkTests"
+      }
+    }
+  ],
+  "version" : 1
+}

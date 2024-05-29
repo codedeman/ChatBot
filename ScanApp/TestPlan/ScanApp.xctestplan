@@ -27,17 +27,9 @@
     {
       "parallelizable" : true,
       "target" : {
-        "containerPath" : "container:ScanApp.xcodeproj",
-        "identifier" : "0A629BB42BCE5D55007DDE57",
-        "name" : "ScanAppUITests"
-      }
-    },
-    {
-      "parallelizable" : true,
-      "target" : {
-        "containerPath" : "container:..\/Message",
-        "identifier" : "MessageTests",
-        "name" : "MessageTests"
+        "containerPath" : "container:ScanApp\/Cores\/NetWork",
+        "identifier" : "NetWorkTests",
+        "name" : "NetWorkTests"
       }
     }
   ],

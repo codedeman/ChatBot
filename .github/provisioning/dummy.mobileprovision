@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>AppIDName</key>
+    <string>DummyApp</string>
+    <key>CreationDate</key>
+    <date>2024-01-01T00:00:00Z</date>
+    <key>Platform</key>
+    <array>
+        <string>iOS</string>
+    </array>
+    <key>DeveloperCertificates</key>
+    <array>
+        <data>MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAx...</data>
+    </array>
+    <key>Entitlements</key>
+    <dict>
+        <key>application-identifier</key>
+        <string>com.example.DummyApp</string>
+        <key>keychain-access-groups</key>
+        <array>
+            <string>com.example.DummyApp</string>
+        </array>
+    </dict>
+    <key>ExpirationDate</key>
+    <date>2025-01-01T00:00:00Z</date>
+    <key>Name</key>
+    <string>Dummy Provisioning Profile</string>
+    <key>TeamIdentifier</key>
+    <array>
+        <string>XXXXXXXXXX</string>
+    </array>
+    <key>UUID</key>
+    <string>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</string>
+    <key>Version</key>
+    <integer>1</integer>
+</dict>
+</plist>
