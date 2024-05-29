@@ -68,6 +68,18 @@ jobs:
             exit 1
           fi
 
+      - name: Print Test Results
+        if: always()
+        run: |
+          echo "Printing the first 20 lines of the test results file for debugging:"
+          head -n 20 build/reports/tests/test-results.xml
+
+      - name: Display Test Results Summary
+        if: always()
+        run: |
+          echo "Test Results Summary:"
+          grep "<testsuite " build/reports/tests/test-results.xml
+
       - name: Upload test results
         if: always()
         uses: actions/upload-artifact@v2
@@ -76,9 +88,3 @@ jobs:
           path: |
             ~/Library/Developer/Xcode/DerivedData/ScanApp*/Logs/Test/*.xcresult
             build/reports/tests/test-results.xml
-
-      - name: Display Test Results
-        if: always()
-        run: |
-          echo "Test Results:"
-          cat build/reports/tests/test-results.xml | grep "<testsuite " -A 10
