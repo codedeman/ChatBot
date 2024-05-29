@@ -9,8 +9,13 @@ on:
       - main
 
 jobs:
-  build:
+  build-and-test:
     runs-on: macos-latest
+    strategy:
+      matrix:
+        xcode-version: [latest]
+        ios-version: [latest]
+        device: [iPhone 15]
 
     env:
       XCODE_PROJECT: ScanApp.xcodeproj
@@ -23,17 +28,38 @@ jobs:
       - name: Set up Xcode
         uses: maxim-lobanov/setup-xcode@v1
         with:
-          xcode-version: latest
+          xcode-version: ${{ matrix.xcode-version }}
+
+      - name: Add Dummy Provisioning Profile
+        run: |
+          mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
+          cp .github/provisioning/dummy.mobileprovision ~/Library/MobileDevice/Provisioning\ Profiles/
+
+      - name: Set Up Code Signing Identity
+        run: |
+          security create-keychain -p actions temp.keychain
+          security default-keychain -s temp.keychain
+          security unlock-keychain -p actions temp.keychain
+          security set-keychain-settings -t 3600 -u temp.keychain
 
       - name: Resolve Swift Package Dependencies
-        run: |
-          xcodebuild -resolvePackageDependencies -project ${{ env.XCODE_PROJECT }}
+        run: xcodebuild -resolvePackageDependencies -project ${{ env.XCODE_PROJECT }}
 
-      - name: Build and test
+      - name: Build and Test
         run: |
           xcodebuild clean build test \
             -project ${{ env.XCODE_PROJECT }} \
             -scheme ${{ env.XCODE_SCHEME }} \
-            -destination 'platform=iOS Simulator,name=iPhone 15,OS=latest' \
-            -only-testing: ScanAppTests \
+            -destination "platform=iOS Simulator,name=${{ matrix.device }},OS=${{ matrix.ios-version }}" \
+            -configuration Debug \
+            CODE_SIGN_IDENTITY="iPhone Developer" \
+            PROVISIONING_PROFILE_SPECIFIER="" \
             -enableCodeCoverage YES
+
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: test-results
+          path: |
+            ~/Library/Developer/Xcode/DerivedData/ScanApp*/Logs/Test/*.xcresult
