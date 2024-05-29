@@ -54,7 +54,7 @@ jobs:
             -configuration Debug \
             CODE_SIGN_IDENTITY="iPhone Developer" \
             PROVISIONING_PROFILE_SPECIFIER="" \
-            -enableCodeCoverage YES
+            -enableCodeCoverage YES | xcpretty --test --color
 
       - name: Upload test results
         if: always()
