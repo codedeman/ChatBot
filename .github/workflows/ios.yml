@@ -17,22 +17,22 @@ jobs:
       XCODE_SCHEME: ScanApp
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-    - name: Set up Xcode
-      uses: maxim-lobanov/setup-xcode@v1
-      with:
-        xcode-version: latest
+      - name: Set up Xcode
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: latest
 
-    - name: Resolve Swift Package Dependencies
+      - name: Resolve Swift Package Dependencies
         run: |
           xcodebuild -resolvePackageDependencies -project ${{ env.XCODE_PROJECT }}
 
-    - name: Build and test
-      run: |
-        xcodebuild clean build test \
-          -project $XCODE_PROJECT \
-          -scheme $XCODE_SCHEME \
-          -destination 'platform=iOS Simulator,name=iPhone 15,OS=latest' \
-          -enableCodeCoverage YES 
+      - name: Build and test
+        run: |
+          xcodebuild clean build test \
+            -project ${{ env.XCODE_PROJECT }} \
+            -scheme ${{ env.XCODE_SCHEME }} \
+            -destination 'platform=iOS Simulator,name=iPhone 15,OS=latest' \
+            -enableCodeCoverage YES
