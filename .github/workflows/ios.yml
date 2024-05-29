@@ -71,5 +71,5 @@ jobs:
       - name: Display Test Results
         if: always()
         run: |
-          xcpretty -r json-compilation-database -o build/reports/tests/test-results.json
-          cat build/reports/tests/test-results.json
+          echo "Test Results:"
+          cat build/reports/tests/test-results.xml | grep "<testsuite " -A 10
