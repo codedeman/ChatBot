@@ -1,4 +1,4 @@
-name: iOS Unit Tests
+name: iOS Build and Unit Tests
 
 on:
   push:
@@ -20,6 +20,7 @@ jobs:
     env:
       XCODE_PROJECT: ScanApp.xcodeproj
       XCODE_SCHEME: ScanApp
+      EXPORT_OPTIONS_PLIST: ExportOptions.plist
 
     steps:
       - name: Checkout repository
@@ -59,6 +60,36 @@ jobs:
             PROVISIONING_PROFILE_SPECIFIER="" \
             -enableCodeCoverage YES | tee xcodebuild.log | xcpretty --test --color
 
+      - name: Archive
+        run: |
+          set -o pipefail && xcodebuild archive \
+            -project ${{ env.XCODE_PROJECT }} \
+            -scheme ${{ env.XCODE_SCHEME }} \
+            -archivePath ${{ env.XCODE_SCHEME }}.xcarchive \
+            CODE_SIGN_IDENTITY="iPhone Developer" \
+            PROVISIONING_PROFILE_SPECIFIER=""
+
+      - name: Export IPA
+        run: |
+          xcodebuild -exportArchive \
+            -archivePath ${{ env.XCODE_SCHEME }}.xcarchive \
+            -exportPath . \
+            -exportOptionsPlist ${{ env.EXPORT_OPTIONS_PLIST }}
+
+      - name: Upload IPA
+        uses: actions/upload-artifact@v2
+        with:
+          name: app-ipa
+          path: ./*.ipa
+
+      - name: Confirm xcodebuild.log Generation
+        run: |
+          if [ -f xcodebuild.log ]; then
+            echo "xcodebuild.log file generated successfully."
+          else
+            echo "xcodebuild.log file not found."
+          fi
+
       - name: Print Entire xcodebuild Log
         if: always()
         run: |
@@ -85,7 +116,6 @@ jobs:
             echo "xcodebuild.log file not found."
           fi
 
-          
       - name: Upload test results
         if: always()
         uses: actions/upload-artifact@v2
