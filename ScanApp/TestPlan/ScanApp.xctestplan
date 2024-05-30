@@ -31,6 +31,14 @@
         "identifier" : "NetWorkTests",
         "name" : "NetWorkTests"
       }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:ScanApp\/Features\/Message",
+        "identifier" : "MessageTests",
+        "name" : "MessageTests"
+      }
     }
   ],
   "version" : 1
