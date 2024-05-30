@@ -99,12 +99,12 @@ jobs:
             ~/Library/Developer/Xcode/DerivedData/ScanApp*/Logs/Test/*.xcresult
             build/reports/tests/test-results.xml
 
-      - name: Display Test Results Summary
-        if: always()
-        run: |
-          echo "Test Results Summary:"
-          if [ -f build/reports/tests/test-results.xml ]; then
-            grep "<testsuite " build/reports/tests/test-results.xml
-          else
-            echo "Test results XML file not found."
-          fi
+      # - name: Display Test Results Summary
+      #   if: always()
+      #   run: |
+      #     echo "Test Results Summary:"
+      #     if [ -f build/reports/tests/test-results.xml ]; then
+      #       grep "<testsuite " build/reports/tests/test-results.xml
+      #     else
+      #       echo "Test results XML file not found."
+      #     fi
