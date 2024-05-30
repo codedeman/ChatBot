@@ -63,19 +63,21 @@ jobs:
       - name: Extract and Count Passed Test Cases
         if: always()
         run: |
-          if [ -d ~/Library/Developer/Xcode/DerivedData/ScanApp*/Logs/Test/ ]; then
-            # Check if there are any .xcresult files in the directory
-            XCRESULT_FILES=$(find ~/Library/Developer/Xcode/DerivedData/ScanApp*/Logs/Test/ -type f -name "*.xcresult")
+          echo "Checking for test results in: ~/Library/Developer/Xcode/DerivedData/"
+          ls -R ~/Library/Developer/Xcode/DerivedData/
+          # if [ -d ~/Library/Developer/Xcode/DerivedData/ScanApp*/Logs/Test/ ]; then
+          #   # Check if there are any .xcresult files in the directory
+          #   XCRESULT_FILES=$(find ~/Library/Developer/Xcode/DerivedData/ScanApp*/Logs/Test/ -type f -name "*.xcresult")
             
-            if [ -n "$XCRESULT_FILES" ]; then
-              PASSED_TEST_COUNT=$(grep -c "Test case '.+' passed" $XCRESULT_FILES)
-              echo "Passed Test Cases: $PASSED_TEST_COUNT"
-            else
-              echo "No .xcresult files found in the Test directory."
-            fi
-          else
-            echo "Test result directory not found."
-          fi
+          #   if [ -n "$XCRESULT_FILES" ]; then
+          #     PASSED_TEST_COUNT=$(grep -c "Test case '.+' passed" $XCRESULT_FILES)
+          #     echo "Passed Test Cases: $PASSED_TEST_COUNT"
+          #   else
+          #     echo "No .xcresult files found in the Test directory."
+          #   fi
+          # else
+          #   echo "Test result directory not found."
+          # fi
           
 
 
