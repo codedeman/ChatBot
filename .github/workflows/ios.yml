@@ -64,7 +64,7 @@ jobs:
         if: always()
         run: |
           echo "Checking for test results in: ~/Library/Developer/Xcode/DerivedData/"
-          ls -R ~/Library/Developer/Xcode/DerivedData/
+          ls ~/Library/Developer/Xcode/DerivedData/
 
           if [ -d ~/Library/Developer/Xcode/DerivedData/ScanApp*/Logs/Test/ ]; then
             echo "Found Test directory."
@@ -76,8 +76,13 @@ jobs:
             echo "Found xcresult files: $XCRESULT_FILES"
             
             if [ -n "$XCRESULT_FILES" ]; then
-              PASSED_TEST_COUNT=$(grep -c "Test case '.+' passed" $XCRESULT_FILES)
-              echo "Passed Test Cases: $PASSED_TEST_COUNT"
+              PASSED_TEST_COUNT=0
+              for FILE in $XCRESULT_FILES; do
+                COUNT=$(grep -c "Test case '.+' passed" "$FILE")
+                PASSED_TEST_COUNT=$((PASSED_TEST_COUNT + COUNT))
+                echo "File: $FILE - Passed Test Cases: $COUNT"
+              done
+              echo "Total Passed Test Cases: $PASSED_TEST_COUNT"
             else
               echo "No .xcresult files found in the Test directory."
             fi
