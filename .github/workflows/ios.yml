@@ -65,22 +65,26 @@ jobs:
         run: |
           echo "Checking for test results in: ~/Library/Developer/Xcode/DerivedData/"
           ls -R ~/Library/Developer/Xcode/DerivedData/
-          # if [ -d ~/Library/Developer/Xcode/DerivedData/ScanApp*/Logs/Test/ ]; then
-          #   # Check if there are any .xcresult files in the directory
-          #   XCRESULT_FILES=$(find ~/Library/Developer/Xcode/DerivedData/ScanApp*/Logs/Test/ -type f -name "*.xcresult")
+
+          if [ -d ~/Library/Developer/Xcode/DerivedData/ScanApp*/Logs/Test/ ]; then
+            echo "Found Test directory."
+            echo "Contents of Test directory:"
+            ls ~/Library/Developer/Xcode/DerivedData/ScanApp*/Logs/Test/
             
-          #   if [ -n "$XCRESULT_FILES" ]; then
-          #     PASSED_TEST_COUNT=$(grep -c "Test case '.+' passed" $XCRESULT_FILES)
-          #     echo "Passed Test Cases: $PASSED_TEST_COUNT"
-          #   else
-          #     echo "No .xcresult files found in the Test directory."
-          #   fi
-          # else
-          #   echo "Test result directory not found."
-          # fi
+            # Check if there are any .xcresult files in the directory
+            XCRESULT_FILES=$(find ~/Library/Developer/Xcode/DerivedData/ScanApp*/Logs/Test/ -type f -name "*.xcresult")
+            echo "Found xcresult files: $XCRESULT_FILES"
+            
+            if [ -n "$XCRESULT_FILES" ]; then
+              PASSED_TEST_COUNT=$(grep -c "Test case '.+' passed" $XCRESULT_FILES)
+              echo "Passed Test Cases: $PASSED_TEST_COUNT"
+            else
+              echo "No .xcresult files found in the Test directory."
+            fi
+          else
+            echo "Test result directory not found."
+          fi
           
-
-
       - name: Upload Test Results
         if: always()
         uses: actions/upload-artifact@v2
