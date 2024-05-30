@@ -67,6 +67,7 @@ jobs:
             echo "Passed Test Cases: $PASSED_TEST_COUNT"
           else
             echo "Test result files not found."
+            ls -l ~/Library/Developer/Xcode/DerivedData/ScanApp*/Logs/Test/
           fi
 
 
