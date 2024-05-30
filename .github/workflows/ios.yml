@@ -59,25 +59,16 @@ jobs:
           echo "Printing the entire xcodebuild log for debugging:"
           cat xcodebuild.log
 
-      - name: Extract Test Case Passed Count
+      - name: Extract and Count Passed Test Cases
         if: always()
         run: |
-          if [ -f xcodebuild.log ]; then
-            TEST_CASES_PASSED=$(grep -o 'Test Case.*passed' xcodebuild.log | wc -l)
-            echo "Test Cases Passed: $TEST_CASES_PASSED"
+          if [ -f ~/Library/Developer/Xcode/DerivedData/ScanApp*/Logs/Test/*.xcresult ]; then
+            PASSED_TEST_COUNT=$(grep -c "Test case '.+' passed" ~/Library/Developer/Xcode/DerivedData/ScanApp*/Logs/Test/*.xcresult)
+            echo "Passed Test Cases: $PASSED_TEST_COUNT"
           else
-            echo "xcodebuild.log file not found."
+            echo "Test result files not found."
           fi
 
-      - name: Extract Test Coverage
-        if: always()
-        run: |
-          if [ -f xcodebuild.log ]; then
-            TEST_COVERAGE=$(grep -o 'Test coverage.*' xcodebuild.log)
-            echo "Test Coverage: $TEST_COVERAGE"
-          else
-            echo "xcodebuild.log file not found."
-          fi
 
       - name: Upload Test Results
         if: always()
