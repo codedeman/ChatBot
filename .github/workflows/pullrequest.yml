@@ -1,0 +1,98 @@
+name: Pull Request Checks
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  build-and-test:
+    runs-on: macos-latest
+    strategy:
+      matrix:
+        xcode-version: [latest]
+        ios-version: [latest]
+        device: [iPhone 15]
+
+    env:
+      XCODE_PROJECT: ScanApp.xcodeproj
+      XCODE_SCHEME: ScanApp
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Xcode
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: ${{ matrix.xcode-version }}
+
+      - name: Install xcpretty
+        run: gem install xcpretty
+
+      - name: Resolve Swift Package Dependencies
+        run: xcodebuild -resolvePackageDependencies -project ${{ env.XCODE_PROJECT }}
+
+      - name: Build and Test
+        run: |
+          set -o pipefail && xcodebuild clean build test \
+            -project ${{ env.XCODE_PROJECT }} \
+            -scheme ${{ env.XCODE_SCHEME }} \
+            -destination "platform=iOS Simulator,name=${{ matrix.device }},OS=${{ matrix.ios-version }}" \
+            -configuration Debug \
+            -enableCodeCoverage YES | tee xcodebuild.log | xcpretty --test --color --report junit --output build/reports/tests/test-results.xml
+
+      - name: Confirm xcodebuild.log Generation
+        run: |
+          if [ -f xcodebuild.log ]; then
+            echo "xcodebuild.log file generated successfully."
+          else
+            echo "xcodebuild.log file not found."
+          fi
+
+      - name: Print Entire xcodebuild Log
+        if: always()
+        run: |
+          echo "Printing the entire xcodebuild log for debugging:"
+          cat xcodebuild.log
+    
+      - name: Extract and Count Passed Test Cases
+        if: always()
+        run: |
+          echo "Checking for test results in: ~/Library/Developer/Xcode/DerivedData/"
+          ls -l ~/Library/Developer/Xcode/DerivedData/
+          
+          TEST_DIR=~/Library/Developer/Xcode/DerivedData/ScanApp*/Logs/Test/
+          if [ -d $TEST_DIR ]; then
+            echo "Found Test directory."
+            echo "Contents of Test directory:"
+            ls -l $TEST_DIR
+            
+            # Check if there are any .xcresult files in the directory
+            XCRESULT_FILES=$(find $TEST_DIR -type f -name "*.xcresult")
+            echo "Found xcresult files:"
+            echo "$XCRESULT_FILES"
+            
+            if [ -n "$XCRESULT_FILES" ]; then
+              PASSED_TEST_COUNT=0
+              for FILE in $XCRESULT_FILES; do
+                echo "Processing file: $FILE"
+                COUNT=$(xcrun xcresulttool get --path "$FILE" --format json | jq '.actions.actions[].actionResult.testsRef.testsPassedCount' | awk '{s+=$1} END {print s}')
+                PASSED_TEST_COUNT=$((PASSED_TEST_COUNT + COUNT))
+                echo "File: $FILE - Passed Test Cases: $COUNT"
+              done
+              echo "Total Passed Test Cases: $PASSED_TEST_COUNT"
+            else
+              echo "No .xcresult files found in the Test directory."
+            fi
+          else
+            echo "Test result directory not found."
+          fi
+          
+      - name: Upload Test Results
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: test-results
+          path: |
+            ~/Library/Developer/Xcode/DerivedData/ScanApp*/Logs/Test/*.xcresult
+            build/reports/tests/test-results.xml
