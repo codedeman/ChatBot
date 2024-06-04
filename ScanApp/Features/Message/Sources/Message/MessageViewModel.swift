@@ -53,7 +53,6 @@ final public class MessageViewModel: ObservableObject {
                 break
 
             }
-//            print("numb ===>", messagesHelps.count)
         } catch  {
             print("got some error \(error)")
             // TODO: handle error right here
