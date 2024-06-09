@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0A0EF99B2BF5B90700FFC425 /* Logger in Frameworks */ = {isa = PBXBuildFile; productRef = 0A0EF99A2BF5B90700FFC425 /* Logger */; };
+		0A49533D2C1458BA007B982E /* Tinder in Frameworks */ = {isa = PBXBuildFile; productRef = 0A49533C2C1458BA007B982E /* Tinder */; };
 		0A629B9F2BCE5D53007DDE57 /* ScanAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A629B9E2BCE5D53007DDE57 /* ScanAppApp.swift */; };
 		0A629BA12BCE5D53007DDE57 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A629BA02BCE5D53007DDE57 /* ContentView.swift */; };
 		0A629BA32BCE5D54007DDE57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A629BA22BCE5D54007DDE57 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		0A2819F52C05B3C2000ABBF9 /* Message */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Message; sourceTree = "<group>"; };
 		0A3539C12BD8BC5300700444 /* ScanApp.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = ScanApp.xctestplan; sourceTree = "<group>"; };
+		0A49533B2C142C64007B982E /* Tinder */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Tinder; sourceTree = "<group>"; };
 		0A629B9B2BCE5D53007DDE57 /* ScanApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A629B9E2BCE5D53007DDE57 /* ScanAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanAppApp.swift; sourceTree = "<group>"; };
 		0A629BA02BCE5D53007DDE57 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A49533D2C1458BA007B982E /* Tinder in Frameworks */,
 				0A0EF99B2BF5B90700FFC425 /* Logger in Frameworks */,
 				0ADE16CA2BF5B71C00301FDE /* Message in Frameworks */,
 				0ADE16CC2BF5B72100301FDE /* NetWork in Frameworks */,
@@ -168,6 +171,7 @@
 		0A629BC82BCE603E007DDE57 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				0A49533B2C142C64007B982E /* Tinder */,
 				0A2819F52C05B3C2000ABBF9 /* Message */,
 				0AA5342E2BD17C2200D404B4 /* DashBoard */,
 			);
@@ -242,6 +246,7 @@
 				0ADE16C92BF5B71C00301FDE /* Message */,
 				0ADE16CB2BF5B72100301FDE /* NetWork */,
 				0A0EF99A2BF5B90700FFC425 /* Logger */,
+				0A49533C2C1458BA007B982E /* Tinder */,
 			);
 			productName = ScanApp;
 			productReference = 0A629B9B2BCE5D53007DDE57 /* ScanApp.app */;
@@ -746,6 +751,10 @@
 		0A0EF99A2BF5B90700FFC425 /* Logger */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Logger;
+		};
+		0A49533C2C1458BA007B982E /* Tinder */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Tinder;
 		};
 		0ADE16C92BF5B71C00301FDE /* Message */ = {
 			isa = XCSwiftPackageProductDependency;

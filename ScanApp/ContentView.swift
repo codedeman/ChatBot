@@ -13,6 +13,7 @@ import Logger
 import NetWork
 import Logger
 import SwiftUI
+import Tinder
 
 struct ContentView: View {
     @State private var showConsoleView = false
@@ -23,15 +24,16 @@ struct ContentView: View {
     let logger = Logger(label: "🤣")
 
     var body: some View {
-        MessageCenter(
-            vm: MessageViewModel(
-                messageRepository: DBMessageRepository(
-                    apiClientService: NetWorkLayer(
-                        logger: logger
-                    )
-                )
-            )
-        )
+        HomeCardView()
+//        MessageCenter(
+//            vm: MessageViewModel(
+//                messageRepository: DBMessageRepository(
+//                    apiClientService: NetWorkLayer(
+//                        logger: logger
+//                    )
+//                )
+//            )
+//        )
     }
 }
 
