@@ -37,7 +37,6 @@ public struct HomeCardView: View {
                                             // Remove the swiped card
                                             viewModel.profiles.removeAll { $0.id == profile.id }
                                         }
-                                        // Reset the offset and rotation for the next card
                                         cardOffset = .zero
                                         cardRotation = 0
                                     }
