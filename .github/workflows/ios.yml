@@ -37,6 +37,7 @@ jobs:
         run: xcodebuild -resolvePackageDependencies -project ${{ env.XCODE_PROJECT }}
 
       - name: Build and Test
+        id: build_and_test
         run: |
           set -o pipefail && xcodebuild clean build test \
             -project ${{ env.XCODE_PROJECT }} \
@@ -44,6 +45,13 @@ jobs:
             -destination "platform=iOS Simulator,name=${{ matrix.device }},OS=${{ matrix.ios-version }}" \
             -configuration Debug \
             -enableCodeCoverage YES | tee xcodebuild.log | xcpretty --test --color --report junit --output build/reports/tests/test-results.xml
+        continue-on-error: true
+
+      - name: Check Test Results and Stop if Tests Failed
+        if: steps.build_and_test.outcome == 'failure'
+        run: |
+          echo "::error::❌ Unit tests failed. Stopping the workflow."
+          exit 1
 
       - name: Confirm xcodebuild.log Generation
         run: |
