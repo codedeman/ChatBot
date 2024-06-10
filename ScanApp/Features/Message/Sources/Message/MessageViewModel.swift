@@ -70,7 +70,8 @@ final public class MessageViewModel: ObservableObject {
         self.task = Task {
             let text = inputMessage
             inputMessage = ""
-            await sendMessageStream(text: text)
+            await send(text: text)
+//            await sendMessageStream(text: text)
         }
     }
 

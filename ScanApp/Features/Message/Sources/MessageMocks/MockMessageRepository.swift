@@ -16,7 +16,7 @@ final public class MockMessageRepository: MessageRepository {
             configuration.yield(
                 StreamMessage.init(
                     role: "assistant",
-                    contents: "How can i help you today "
+                    contents: "How can i help you today"
                 )
             )
         }

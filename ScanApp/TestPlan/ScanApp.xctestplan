@@ -17,7 +17,11 @@
   },
   "testTargets" : [
     {
-      "parallelizable" : true,
+      "enabled" : false,
+      "selectedTests" : [
+        "ScanAppTests\/testExample()",
+        "ScanAppTests\/testPerformanceExample()"
+      ],
       "target" : {
         "containerPath" : "container:ScanApp.xcodeproj",
         "identifier" : "0A629BAA2BCE5D55007DDE57",

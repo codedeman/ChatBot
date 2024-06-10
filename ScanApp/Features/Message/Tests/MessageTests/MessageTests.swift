@@ -29,6 +29,8 @@ final class MessageTests: XCTestCase {
         // Given
         await sut.sendTapped()
 
+        try await Task.sleep(for: .seconds(2))
+
         if let firtSentence = self.sut.messages.first?.responseText, let secondSentence = self.sut.messages.first?.responseText {
             XCTAssertEqual(firtSentence, "Hello my friend") // Then
             XCTAssertEqual(secondSentence, "How can i help you today") // Then
