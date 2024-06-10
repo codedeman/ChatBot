@@ -370,6 +370,64 @@
             endingLineNumber = "70"
             landmarkName = "request(_:for:decoder:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "05061902-2CBC-4021-9109-F8EF7FCA882E - 13928c27fd121ecc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for NetWork.NetWorkLayer.request&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(_: Foundation.URLRequest, for: &#x3c4;_0_0.Type, decoder: Foundation.JSONDecoder) async -&gt; Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;"
+                  moduleName = "MessageTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kevin/ChatBot/ScanApp/Cores/NetWork/Sources/NetWork/NetWork.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70">
+               </Location>
+               <Location
+                  uuid = "05061902-2CBC-4021-9109-F8EF7FCA882E - ddabbbc1802f5aeb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for NetWork.NetWorkLayer.request&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(_: Foundation.URLRequest, for: &#x3c4;_0_0.Type, decoder: Foundation.JSONDecoder) async -&gt; Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;"
+                  moduleName = "MessageTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kevin/ChatBot/ScanApp/Cores/NetWork/Sources/NetWork/NetWork.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "102"
+                  endingLineNumber = "102">
+               </Location>
+               <Location
+                  uuid = "05061902-2CBC-4021-9109-F8EF7FCA882E - 14a1e7c39748def2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for NetWork.NetWorkLayer.request&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(_: Foundation.URLRequest, for: &#x3c4;_0_0.Type, decoder: Foundation.JSONDecoder) async -&gt; Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;"
+                  moduleName = "MessageTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kevin/ChatBot/ScanApp/Cores/NetWork/Sources/NetWork/NetWork.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "102"
+                  endingLineNumber = "102">
+               </Location>
+               <Location
+                  uuid = "05061902-2CBC-4021-9109-F8EF7FCA882E - 95de8d51a25430f1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for NetWork.NetWorkLayer.request&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(_: Foundation.URLRequest, for: &#x3c4;_0_0.Type, decoder: Foundation.JSONDecoder) async -&gt; Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;"
+                  moduleName = "MessageTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kevin/ChatBot/ScanApp/Cores/NetWork/Sources/NetWork/NetWork.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "102"
+                  endingLineNumber = "102">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -402,6 +460,36 @@
             endingLineNumber = "26"
             landmarkName = "generateDates(startDate:numberOfDays:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8F4B5A0B-2F5E-43CF-BCE0-61B2D5A99DD3 - f0ac8a25d7a2155a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static CoreUI.CalendarViewModel.generateDates(startDate: Foundation.Date, numberOfDays: Swift.Int) -&gt; Swift.Array&lt;Foundation.Date&gt;"
+                  moduleName = "MessageTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kevin/ChatBot/ScanApp/Cores/CoreUI/Sources/CoreUI/Calendar/CalendarViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26">
+               </Location>
+               <Location
+                  uuid = "8F4B5A0B-2F5E-43CF-BCE0-61B2D5A99DD3 - f0ac8a25d7a2155a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static CoreUI.CalendarViewModel.generateDates(startDate: Foundation.Date, numberOfDays: Swift.Int) -&gt; Swift.Array&lt;Foundation.Date&gt;"
+                  moduleName = "MessageTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kevin/ChatBot/ScanApp/Cores/CoreUI/Sources/CoreUI/Calendar/CalendarViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -482,6 +570,36 @@
             endingLineNumber = "72"
             landmarkName = "body"
             landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "7C45C9C1-0A45-45CA-93D4-559FE9BA2056 - 5a14b69386b9123f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.background&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(_: &#x3c4;_1_0, ignoresSafeAreaEdges: SwiftUI.Edge.Set) -&gt; some&gt;&gt;.0, SwiftUI.LazyVGrid&lt;SwiftUI.ForEach&lt;Swift.Array&lt;Swift.Array&lt;Swift.Optional&lt;Foundation.Date&gt;&gt;&gt;, Swift.Array&lt;Swift.Optional&lt;Foundation.Date&gt;&gt;, SwiftUI.ForEach&lt;Swift.Array&lt;Swift.Optional&lt;Foundation.Date&gt;&gt;, Swift.Optional&lt;Foundation.Date&gt;, SwiftUI._ConditionalContent&lt;&lt;&lt;opaque return type of SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.frame(minWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, minHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0&gt;&gt;&gt;&gt;)&gt; in CoreUI.CalendarView.body.getter : some"
+                  moduleName = "MessageTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kevin/ChatBot/ScanApp/Cores/CoreUI/Sources/CoreUI/Calendar/CalendarView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "72"
+                  endingLineNumber = "72">
+               </Location>
+               <Location
+                  uuid = "7C45C9C1-0A45-45CA-93D4-559FE9BA2056 - 6682a11242947381"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;Swift.Array&lt;Swift.Optional&lt;Foundation.Date&gt;&gt;&gt;, Swift.Array&lt;Swift.Optional&lt;Foundation.Date&gt;&gt;, SwiftUI.ForEach&lt;Swift.Array&lt;Swift.Optional&lt;Foundation.Date&gt;&gt;, Swift.Optional&lt;Foundation.Date&gt;, SwiftUI._ConditionalContent&lt;&lt;&lt;opaque return type of SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.frame(minWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, minHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0&gt;&gt;&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.background&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(_: &#x3c4;_1_0, ignoresSafeAreaEdges: SwiftUI.Edge.Set) -&gt; some&gt;&gt;.0, SwiftUI.LazyVGrid&lt;SwiftUI.ForEach&lt;Swift.Array&lt;Swift.Array&lt;Swift.Optional&lt;Foundation.Date&gt;&gt;&gt;, Swift.Array&lt;Swift.Optional&lt;Foundation.Date&gt;&gt;, SwiftUI.ForEach&lt;Swift.Array&lt;Swift.Optional&lt;Foundation.Date&gt;&gt;, Swift.Optional&lt;Foundation.Date&gt;, SwiftUI._ConditionalContent&lt;&lt;&lt;opaque return type of SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.frame(minWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, minHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0&gt;&gt;&gt;&gt;)&gt; in CoreUI.CalendarView.body.getter : some"
+                  moduleName = "MessageTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kevin/ChatBot/ScanApp/Cores/CoreUI/Sources/CoreUI/Calendar/CalendarView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "72"
+                  endingLineNumber = "72">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -498,6 +616,36 @@
             endingLineNumber = "74"
             landmarkName = "body"
             landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "BD63D8F4-5035-42BF-83E2-8E151DB61B21 - 40fead3550fea1ce"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Array&lt;Swift.Optional&lt;Foundation.Date&gt;&gt;) -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;Swift.Optional&lt;Foundation.Date&gt;&gt;, Swift.Optional&lt;Foundation.Date&gt;, SwiftUI._ConditionalContent&lt;&lt;&lt;opaque return type of SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.frame(minWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, minHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0&gt;&gt; in closure #2 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;Swift.Array&lt;Swift.Optional&lt;Foundation.Date&gt;&gt;&gt;, Swift.Array&lt;Swift.Optional&lt;Foundation.Date&gt;&gt;, SwiftUI.ForEach&lt;Swift.Array&lt;Swift.Optional&lt;Foundation.Date&gt;&gt;, Swift.Optional&lt;Foundation.Date&gt;, SwiftUI._ConditionalContent&lt;&lt;&lt;opaque return type of SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.frame(minWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, minHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0&gt;&gt;&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.background&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(_: &#x3c4;_1_0, ignoresSafeAreaEdges: SwiftUI.Edge.Set) -&gt; some&gt;&gt;.0, SwiftUI.LazyVGrid&lt;SwiftUI.ForEach&lt;Swift.Array&lt;Swift.Array&lt;Swift.Optional&lt;Foundation.Date&gt;&gt;&gt;, Swift.Array&lt;Swift.Optional&lt;Foundation.Date&gt;&gt;, SwiftUI.ForEach&lt;Swift.Array&lt;Swift.Optional&lt;Foundation.Date&gt;&gt;, Swift.Optional&lt;Foundation.Date&gt;, SwiftUI._ConditionalContent&lt;&lt;&lt;opaque return type of SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.frame(minWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, minHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0&gt;&gt;&gt;&gt;)&gt; in CoreUI.CalendarView.body.getter : some"
+                  moduleName = "MessageTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kevin/ChatBot/ScanApp/Cores/CoreUI/Sources/CoreUI/Calendar/CalendarView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74">
+               </Location>
+               <Location
+                  uuid = "BD63D8F4-5035-42BF-83E2-8E151DB61B21 - 5777836a9e28549"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Date&gt;) -&gt; SwiftUI._ConditionalContent&lt;&lt;&lt;opaque return type of SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.frame(minWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, minHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0&gt; in closure #1 (Swift.Array&lt;Swift.Optional&lt;Foundation.Date&gt;&gt;) -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;Swift.Optional&lt;Foundation.Date&gt;&gt;, Swift.Optional&lt;Foundation.Date&gt;, SwiftUI._ConditionalContent&lt;&lt;&lt;opaque return type of SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.frame(minWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, minHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0&gt;&gt; in closure #2 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;Swift.Array&lt;Swift.Optional&lt;Foundation.Date&gt;&gt;&gt;, Swift.Array&lt;Swift.Optional&lt;Foundation.Date&gt;&gt;, SwiftUI.ForEach&lt;Swift.Array&lt;Swift.Optional&lt;Foundation.Date&gt;&gt;, Swift.Optional&lt;Foundation.Date&gt;, SwiftUI._ConditionalContent&lt;&lt;&lt;opaque return type of SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.frame(minWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, minHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0&gt;&gt;&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.background&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(_: &#x3c4;_1_0, ignoresSafeAreaEdges: SwiftUI.Edge.Set) -&gt; some&gt;&gt;.0, SwiftUI.LazyVGrid&lt;SwiftUI.ForEach&lt;Swift.Array&lt;Swift.Array&lt;Swift.Optional&lt;Foundation.Date&gt;&gt;&gt;, Swift.Array&lt;Swift.Optional&lt;Foundation.Date&gt;&gt;, SwiftUI.ForEach&lt;Swift.Array&lt;Swift.Optional&lt;Foundation.Date&gt;&gt;, Swift.Optional&lt;Foundation.Date&gt;, SwiftUI._ConditionalContent&lt;&lt;&lt;opaque return type of SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.frame(minWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, minHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0&gt;&gt;&gt;&gt;)&gt; in CoreUI.CalendarView.body.getter : some"
+                  moduleName = "MessageTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kevin/ChatBot/ScanApp/Cores/CoreUI/Sources/CoreUI/Calendar/CalendarView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -514,6 +662,36 @@
             endingLineNumber = "75"
             landmarkName = "body"
             landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "4D751E58-0931-4DB9-B97F-B540EEA0D6C0 - 5777836a9e2856a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Date&gt;) -&gt; SwiftUI._ConditionalContent&lt;&lt;&lt;opaque return type of SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.frame(minWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, minHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0&gt; in closure #1 (Swift.Array&lt;Swift.Optional&lt;Foundation.Date&gt;&gt;) -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;Swift.Optional&lt;Foundation.Date&gt;&gt;, Swift.Optional&lt;Foundation.Date&gt;, SwiftUI._ConditionalContent&lt;&lt;&lt;opaque return type of SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.frame(minWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, minHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0&gt;&gt; in closure #2 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;Swift.Array&lt;Swift.Optional&lt;Foundation.Date&gt;&gt;&gt;, Swift.Array&lt;Swift.Optional&lt;Foundation.Date&gt;&gt;, SwiftUI.ForEach&lt;Swift.Array&lt;Swift.Optional&lt;Foundation.Date&gt;&gt;, Swift.Optional&lt;Foundation.Date&gt;, SwiftUI._ConditionalContent&lt;&lt;&lt;opaque return type of SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.frame(minWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, minHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0&gt;&gt;&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.background&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(_: &#x3c4;_1_0, ignoresSafeAreaEdges: SwiftUI.Edge.Set) -&gt; some&gt;&gt;.0, SwiftUI.LazyVGrid&lt;SwiftUI.ForEach&lt;Swift.Array&lt;Swift.Array&lt;Swift.Optional&lt;Foundation.Date&gt;&gt;&gt;, Swift.Array&lt;Swift.Optional&lt;Foundation.Date&gt;&gt;, SwiftUI.ForEach&lt;Swift.Array&lt;Swift.Optional&lt;Foundation.Date&gt;&gt;, Swift.Optional&lt;Foundation.Date&gt;, SwiftUI._ConditionalContent&lt;&lt;&lt;opaque return type of SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.frame(minWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, minHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0&gt;&gt;&gt;&gt;)&gt; in CoreUI.CalendarView.body.getter : some"
+                  moduleName = "MessageTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kevin/ChatBot/ScanApp/Cores/CoreUI/Sources/CoreUI/Calendar/CalendarView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75">
+               </Location>
+               <Location
+                  uuid = "4D751E58-0931-4DB9-B97F-B540EEA0D6C0 - 5777836a9e2856a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Date&gt;) -&gt; SwiftUI._ConditionalContent&lt;&lt;&lt;opaque return type of SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.frame(minWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, minHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0&gt; in closure #1 (Swift.Array&lt;Swift.Optional&lt;Foundation.Date&gt;&gt;) -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;Swift.Optional&lt;Foundation.Date&gt;&gt;, Swift.Optional&lt;Foundation.Date&gt;, SwiftUI._ConditionalContent&lt;&lt;&lt;opaque return type of SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.frame(minWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, minHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0&gt;&gt; in closure #2 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;Swift.Array&lt;Swift.Optional&lt;Foundation.Date&gt;&gt;&gt;, Swift.Array&lt;Swift.Optional&lt;Foundation.Date&gt;&gt;, SwiftUI.ForEach&lt;Swift.Array&lt;Swift.Optional&lt;Foundation.Date&gt;&gt;, Swift.Optional&lt;Foundation.Date&gt;, SwiftUI._ConditionalContent&lt;&lt;&lt;opaque return type of SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.frame(minWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, minHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0&gt;&gt;&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.background&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(_: &#x3c4;_1_0, ignoresSafeAreaEdges: SwiftUI.Edge.Set) -&gt; some&gt;&gt;.0, SwiftUI.LazyVGrid&lt;SwiftUI.ForEach&lt;Swift.Array&lt;Swift.Array&lt;Swift.Optional&lt;Foundation.Date&gt;&gt;&gt;, Swift.Array&lt;Swift.Optional&lt;Foundation.Date&gt;&gt;, SwiftUI.ForEach&lt;Swift.Array&lt;Swift.Optional&lt;Foundation.Date&gt;&gt;, Swift.Optional&lt;Foundation.Date&gt;, SwiftUI._ConditionalContent&lt;&lt;&lt;opaque return type of SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.frame(minWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, minHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0&gt;&gt;&gt;&gt;)&gt; in CoreUI.CalendarView.body.getter : some"
+                  moduleName = "MessageTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kevin/ChatBot/ScanApp/Cores/CoreUI/Sources/CoreUI/Calendar/CalendarView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -594,6 +772,390 @@
             endingLineNumber = "59"
             landmarkName = "testPostFailse()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "793C7A20-F544-4F20-B798-77B169F8C283"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ScanApp/Features/Message/Tests/MessageTests/MessageTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "testSendMessage()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BE5E9B38-D369-4C98-A204-319CF0278581"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ScanApp/Features/Message/Sources/MessageMocks/MockMessageRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "send(text:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0311F7D3-8C8D-48A6-A643-828B282587A9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ScanApp/Features/Message/Tests/MessageTests/MessageTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "testSendMessage()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0311F7D3-8C8D-48A6-A643-828B282587A9 - 73b9fbea1753c9a7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for MessageTests.MessageTests.testSendMessage() async throws -&gt; ()"
+                  moduleName = "MessageTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kevin/ChatBot/ScanApp/Features/Message/Tests/MessageTests/MessageTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30">
+               </Location>
+               <Location
+                  uuid = "0311F7D3-8C8D-48A6-A643-828B282587A9 - d3bac9c7cd9b2ab5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for MessageTests.MessageTests.testSendMessage() async throws -&gt; ()"
+                  moduleName = "MessageTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kevin/ChatBot/ScanApp/Features/Message/Tests/MessageTests/MessageTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28">
+               </Location>
+               <Location
+                  uuid = "0311F7D3-8C8D-48A6-A643-828B282587A9 - be01f0e3f3a60625"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for MessageTests.MessageTests.testSendMessage() async throws -&gt; ()"
+                  moduleName = "MessageTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kevin/ChatBot/ScanApp/Features/Message/Tests/MessageTests/MessageTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DA166FE9-31A3-459B-8F7D-9A6606EF242B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ScanApp/Features/Message/Sources/MessageMocks/MockMessageRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "send(text:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3FB93F88-7B9E-40C0-B096-96BE5E50E4F9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ScanApp/Features/Message/Sources/MessageMocks/MockMessageRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "send(text:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9206FDC0-3C10-4975-9EFD-550F99508524"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ScanApp/Features/Message/Tests/MessageTests/MessageTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "testSendMessage()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "326AA169-0B3A-4858-98D5-F460A29AFE81"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ScanApp/Features/Message/Sources/MessageMocks/MockMessageRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "sendStream(text:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1309A5C8-BDE0-437A-8E8B-98F8676A231D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ScanApp/Features/Message/Sources/MessageMocks/MockMessageRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "sendStream(text:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2EE21E56-2D0E-4EB6-9FF8-9C2FADED8F52"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ScanApp/Features/Message/Tests/MessageTests/MessageTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "testSendMessage()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2EE21E56-2D0E-4EB6-9FF8-9C2FADED8F52 - f889cdfddf8c4527"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for MessageTests.MessageTests.testSendMessage() async throws -&gt; ()"
+                  moduleName = "MessageTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kevin/ChatBot/ScanApp/Features/Message/Tests/MessageTests/MessageTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34">
+               </Location>
+               <Location
+                  uuid = "2EE21E56-2D0E-4EB6-9FF8-9C2FADED8F52 - f889cdfddf8c4527"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for MessageTests.MessageTests.testSendMessage() async throws -&gt; ()"
+                  moduleName = "MessageTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kevin/ChatBot/ScanApp/Features/Message/Tests/MessageTests/MessageTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34">
+               </Location>
+               <Location
+                  uuid = "2EE21E56-2D0E-4EB6-9FF8-9C2FADED8F52 - f889cdfddf8c4527"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for MessageTests.MessageTests.testSendMessage() async throws -&gt; ()"
+                  moduleName = "MessageTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kevin/ChatBot/ScanApp/Features/Message/Tests/MessageTests/MessageTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3CB3BAAD-207D-4215-994D-B192E4502B5C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ScanApp/Features/Message/Tests/MessageTests/MessageTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "testSendMessage()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C7EFC796-DA61-4841-ABD0-2A284A4C9FBC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ScanApp/Features/Message/Sources/Message/MessageViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "send(text:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C7EFC796-DA61-4841-ABD0-2A284A4C9FBC - 2ea4bf57da826056"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Message.MessageViewModel.send(text: Swift.String) async -&gt; ()"
+                  moduleName = "MessageTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kevin/ChatBot/ScanApp/Features/Message/Sources/Message/MessageViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "96"
+                  endingLineNumber = "96">
+               </Location>
+               <Location
+                  uuid = "C7EFC796-DA61-4841-ABD0-2A284A4C9FBC - d513326e5753d560"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) await resume partial function for Message.MessageViewModel.send(text: Swift.String) async -&gt; ()"
+                  moduleName = "MessageTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kevin/ChatBot/ScanApp/Features/Message/Sources/Message/MessageViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "96"
+                  endingLineNumber = "96">
+               </Location>
+               <Location
+                  uuid = "C7EFC796-DA61-4841-ABD0-2A284A4C9FBC - 1d5c3e213983ac28"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for Message.MessageViewModel.send(text: Swift.String) async -&gt; ()"
+                  moduleName = "MessageTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kevin/ChatBot/ScanApp/Features/Message/Sources/Message/MessageViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "96"
+                  endingLineNumber = "96">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "10C72400-5B5D-4A70-B19F-F5FB0972DBC4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ScanApp/Features/Message/Sources/Message/MessageViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "send(text:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "821F3A1F-D86D-48D9-8E61-2EA24D13BBDC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ScanApp/Features/Message/Sources/Message/MessageViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
+            landmarkName = "send(text:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "821F3A1F-D86D-48D9-8E61-2EA24D13BBDC - 2ea4bf57da826280"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Message.MessageViewModel.send(text: Swift.String) async -&gt; ()"
+                  moduleName = "MessageTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kevin/ChatBot/ScanApp/Features/Message/Sources/Message/MessageViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "110"
+                  endingLineNumber = "110">
+               </Location>
+               <Location
+                  uuid = "821F3A1F-D86D-48D9-8E61-2EA24D13BBDC - 1d5c3e213983aefe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for Message.MessageViewModel.send(text: Swift.String) async -&gt; ()"
+                  moduleName = "MessageTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kevin/ChatBot/ScanApp/Features/Message/Sources/Message/MessageViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "110"
+                  endingLineNumber = "110">
+               </Location>
+               <Location
+                  uuid = "821F3A1F-D86D-48D9-8E61-2EA24D13BBDC - 6483fe69e90ccc1d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(6) suspend resume partial function for Message.MessageViewModel.send(text: Swift.String) async -&gt; ()"
+                  moduleName = "MessageTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kevin/ChatBot/ScanApp/Features/Message/Sources/Message/MessageViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "110"
+                  endingLineNumber = "110">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
